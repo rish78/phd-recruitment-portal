@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Forgot Registration Id</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="ridbox" id="content">
+						<div class="col-md-12">
+    <h2>Forgot Registration Id <a style="float: right;font-size: 10pt" class="btn btn-info" href="cand_login.html">BACK</a></h2>
+    <form action="" method="POST">
+        <input type="hidden" name="Forgot_RegistrationId" value="Forgot_RegistrationId">
+		<div class="form-group">
+			<label>User Id<span class="asteriskField">*</span> </label>
+			<div> <input class="form-control" type="text" name="login_id" required=""> </div>
+		</div>
+		<div class="form-group">
+			<label>Email<span class="asteriskField">*</span> </label>
+            <div> <input class="form-control" type="email" name="email" required=""> </div>
+        </div>
+        <div class="form-group">
+        	<label> Hint Question<span class="asteriskField">*</span> </label>
+        	<div>
+        		<select name="hint_que" class="select form-control" required="">
+        			<option value="">---------</option>
+        			<option value="1">What is your exact time of birth?</option><option value="2">What is your all time favorite sports team?</option><option value="3">Who was your childhood hero?</option><option value="4">What is your pets name?</option><option value="5">What is your Mothers maiden name?</option><option value="6">What is your favourite food?</option><option value="7">What is the name of your first school?</option>        		</select>
+        	</div>
+        </div>
+        <div class="form-group">
+        	<label> Hint Answer<span class="asteriskField">*</span> </label>
+        	<div> <input class="form-control" type="text" name="hint_ans" required=""> </div>
+        </div>
+        <input type="hidden" name="controller" value="registration">
+        <input type="hidden" name="function" value="Forgot_RegistrationId">
+        <input type="hidden" name="pid" value="phd_admission">
+        <button type="submit" name="submit" id="pay" class="btn btn-success"> SUBMIT </button>
+    </form>
+  </div>
+ </div>
+  </body>
+</html>

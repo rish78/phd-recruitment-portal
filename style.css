@@ -1,0 +1,80 @@
+
+.box{
+  text-align: center;
+  max-width: 500px;
+  margin: auto;
+  padding:20px;
+  box-shadow: 5px 5px 5px 5px grey;
+  justify-content: center;
+  display: flex;
+}
+
+.container{
+  text-align: left;
+  max-width: 500px;
+  margin: auto;
+  padding:20px;
+  box-shadow: 5px 5px 5px 5px grey;
+}
+
+.asteriskField, .red{
+  color: red;
+  font-weight: bold;
+}
+
+.ridbox, .regis ,.useridf{
+  text-align: left;
+  max-width: 500px;
+  margin: auto;
+  padding:20px;
+  box-shadow: 5px 5px 5px 5px grey;
+}
+small{
+  display:none;
+}
+
+div{
+  padding: 2px;
+}
+
+.page, .page_2,{
+  text-align: left;
+  max-width: 750px;
+  margin: auto;
+  padding:10px;
+  box-shadow: 5px 5px 5px 5px grey;
+}
+
+.page_4, .page_5{
+  text-align: left;
+  max-width: 1200px;
+  margin: auto;
+  padding:auto;
+  box-shadow: 5px 5px 5px 5px grey
+}
+
+.form-group{
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  text-align: left;
+
+}
+
+.col-sm-1, .col-sm-3{
+  display: inline;
+ margin:auto;
+}
+
+.col-sm-4,.col-sm-8,{
+  display: block;
+}
+
+span{
+  display: inline-block;
+}
+
+ .checkbox{
+   display: flex;
+   margin: auto;
+ }
