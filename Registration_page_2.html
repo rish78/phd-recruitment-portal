@@ -1,128 +1,275 @@
 <html lang="en-US"><head>
 	<title>Registration page 2</title>
-	<link rel="icon" href="index.php?pid=favicon" sizes="16x16">
-	<link rel="stylesheet" href="index.php?pid=css_bootstrapmin">
-	<link rel="stylesheet" href="index.php?pid=css_style">
-	<link rel="stylesheet" href="index.php?pid=css_bootstrap_select">
-	<link rel="stylesheet" href="index.php?pid=css_fontawesomemin">
-	    <link rel="stylesheet" href="style.css">
+	    <link rel="stylesheet" href="style_2.css">
 <body id="body">
-			<div class="page_2">
-				<div class="row">
-					<div class="col-md-9" id="content">
-						<form action="" method="POST" enctype="multipart/form-data" id="frm_prod" name="frm_prod" onsubmit="return submit_form1();">
-    <input type="hidden" name="registration_id" value="141251112">
-    <input type="hidden" name="login_id" value="063565deb9c64f7af7c9a9a4fc2bc445">
-    <input type="hidden" name="academic_id_up" value="">
+	<div class="col-md-9" id="content">
+					<style type="text/css">.red{ color: red; font-weight: bold; font-size: 11pt; }</style>
+<form action="" method="POST" enctype="multipart/form-data" id="frm_prod" name="frm_prod" onsubmit="return submit_form1();">
+	<input type="hidden" name="registration_id" value="172062547">
+	<input type="hidden" name="login_id" value="6c7b29c6b86f4a78b83a6d0a4c9aba6a">
+	<input type="hidden" name="academic_id_up" value="">
 
-    <input type="hidden" name="controller" value="LoginHome">
-    <input type="hidden" name="function" value="academic_qalification">
-    <input type="hidden" name="pid" value="phd_admission">
-    <section class="panel panel-default">
-        <header class="panel-heading">Educational Details<span class="red">*</span></header>
-        <div class="panel-body">
-            <p>Academic Qualification starting from 10th: (Upload marksheet for each academic qualification Documents in a single PDF)</p>
-            <table class="table table-bordered table-responsive" id="methods2">
-            	<tbody><tr><td colspan="2" style="width: 45%">
-            		<label>Qualification</label>
-            		<select class="form-control" name="qualification" id="qualification">
-                        <option value="">SELECT</option>
-                       	<option value="10th or Equivalent">10th or Equivalent</option>
-                       	<option value="12th or Equivalent">12th or Equivalent</option>
-                       	<option value="Diploma">Diploma</option>
-                       	<option value="Graduation">Graduation</option>
-                       	<option value="Post Graduation">Post Graduation</option>
-                       	<option value="PhD">PhD</option>
-                       	<option value="Other">Other</option>
-                    </select>
-	            	</td>
-	            	<td colspan="3">
-	                    <label>Degree</label>
-	                    <input class="form-control" type="text" name="degree" id="degree" onpaste="return false;" value=""></td>
-	            </tr>
-	            <tr>
-	                <td colspan="2" rowspan="2">
-	                    <label>Subject/ Specialization</label>
-	                    <textarea class="form-control" type="text" name="subject" id="subject" onpaste="return false;" rows="3"></textarea> </td>
-	                <td colspan="3"><label>School/ College</label>
-	                	<input class="form-control" type="text" name="collage" id="collage" onpaste="return false;" value=""></td>
-	            </tr>
-	            <tr>
-	                <td colspan="3"><label>Board/ University</label>
-	                	<input class="form-control" type="text" name="board" id="board" onpaste="return false;" value=""></td>
-	            </tr>
-	            <tr>
-	                <td> <label>Passing Year</label>
-	                    <select class="form-control" name="year" id="year">
-	                        <option value="">Year</option>
-	                        <option value="2023">2023</option><option value="2022">2022</option><option value="2021">2021</option><option value="2020">2020</option><option value="2019">2019</option><option value="2018">2018</option><option value="2017">2017</option><option value="2016">2016</option><option value="2015">2015</option><option value="2014">2014</option><option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option><option value="2008">2008</option><option value="2007">2007</option><option value="2006">2006</option><option value="2005">2005</option><option value="2004">2004</option><option value="2003">2003</option><option value="2002">2002</option><option value="2001">2001</option><option value="2000">2000</option><option value="1999">1999</option><option value="1998">1998</option><option value="1997">1997</option><option value="1996">1996</option><option value="1995">1995</option><option value="1994">1994</option><option value="1993">1993</option><option value="1992">1992</option><option value="1991">1991</option><option value="1990">1990</option><option value="1989">1989</option><option value="1988">1988</option><option value="1987">1987</option><option value="1986">1986</option><option value="1985">1985</option><option value="1984">1984</option><option value="1983">1983</option>	                    </select></td>
-	                <td><label>Regular/ Correspondence</label>
-	                    <select class="form-control" name="regular_cross" id="regular_cross">
-	                        <option value="">Select</option>
-	                        <option value="Regular">Regular</option>
-	                        <option value="Correspondence">Correspondence</option>
-	                    </select>
-	                </td>
-	                <td><label>Maximum marks</label><input class="form-control" type="text" name="max" id="max1" value=""></td>
-	                <td><label>Obtained marks</label><input class="form-control" type="text" name="obt" id="obt1" onchange="myFunction('max1', 'obt1', 'per1')" value=""></td>
-	                <td><label>Percentage/ CGPA</label><input class="form-control" type="text" name="percent" id="per1" required="" readonly="" value=""></td>
-	            </tr>
-	            <tr><td colspan="5">
-	                <center>
-	                	                </center>
-	            </td></tr>
-            </tbody></table>
-        </div>
-    </section>
+	<input type="hidden" name="controller" value="LoginHome">
+	<input type="hidden" name="function" value="academic_qalification">
+	<input type="hidden" name="pid" value="phd_admission">
+	<section class="panel panel-default">
+			<header class="panel-heading">Educational Details<span class="red">*</span></header>
+			<div class="panel-body">
+					<p>Academic Qualification starting from 10th: (Upload marksheet for each academic qualification Documents in a single PDF)</p>
+					<table class="table table-bordered table-responsive" id="methods2">
+						<tbody><tr><td colspan="2" style="width: 45%">
+							<label>Qualification</label>
+							<select class="form-control" name="qualification" id="qualification">
+											<option value="">SELECT</option>
+											<option value="10th or Equivalent">10th or Equivalent</option>
+											<option value="12th or Equivalent">12th or Equivalent</option>
+											<option value="Diploma">Diploma</option>
+											<option value="Graduation">Graduation</option>
+											<option value="Post Graduation">Post Graduation</option>
+											<option value="PhD">PhD</option>
+											<option value="Other">Other</option>
+									</select>
+							</td>
+							<td colspan="3">
+										<label>Degree</label>
+										<input class="form-control" type="text" name="degree" id="degree" onpaste="return false;" value=""></td>
+						</tr>
+						<tr>
+								<td colspan="2" rowspan="2">
+										<label>Subject/ Specialization</label>
+										<textarea class="form-control" type="text" name="subject" id="subject" onpaste="return false;" rows="3"></textarea> </td>
+								<td colspan="3"><label>School/ College</label>
+									<input class="form-control" type="text" name="collage" id="collage" onpaste="return false;" value=""></td>
+						</tr>
+						<tr>
+								<td colspan="3"><label>Board/ University</label>
+									<input class="form-control" type="text" name="board" id="board" onpaste="return false;" value=""></td>
+						</tr>
+						<tr>
+								<td> <label>Passing Year</label>
+										<select class="form-control" name="year" id="year">
+												<option value="">Year</option>
+												<option value="2023">2023</option><option value="2022">2022</option><option value="2021">2021</option><option value="2020">2020</option><option value="2019">2019</option><option value="2018">2018</option><option value="2017">2017</option><option value="2016">2016</option><option value="2015">2015</option><option value="2014">2014</option><option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option><option value="2008">2008</option><option value="2007">2007</option><option value="2006">2006</option><option value="2005">2005</option><option value="2004">2004</option><option value="2003">2003</option><option value="2002">2002</option><option value="2001">2001</option><option value="2000">2000</option><option value="1999">1999</option><option value="1998">1998</option><option value="1997">1997</option><option value="1996">1996</option><option value="1995">1995</option><option value="1994">1994</option><option value="1993">1993</option><option value="1992">1992</option><option value="1991">1991</option><option value="1990">1990</option><option value="1989">1989</option><option value="1988">1988</option><option value="1987">1987</option><option value="1986">1986</option><option value="1985">1985</option><option value="1984">1984</option><option value="1983">1983</option>	                    </select></td>
+								<td><label>Regular/ Correspondence</label>
+										<select class="form-control" name="regular_cross" id="regular_cross">
+												<option value="">Select</option>
+												<option value="Regular">Regular</option>
+												<option value="Correspondence">Correspondence</option>
+										</select>
+								</td>
+								<td><label>Maximum marks</label><input class="form-control" type="text" name="max" id="max1" value=""></td>
+								<td><label>Obtained marks</label><input class="form-control" type="text" name="obt" id="obt1" onchange="myFunction('max1', 'obt1', 'per1')" value=""></td>
+								<td><label>Percentage/ CGPA</label><input class="form-control" type="text" name="percent" id="per1" required="" readonly="" value=""></td>
+						</tr>
+						<tr><td colspan="5">
+								<center>
+																	</center>
+						</td></tr>
+					</tbody></table>
+			</div>
+	</section>
 </form>
 <center>
 
-	    <button class="btn btn-success" onclick="AddData()" style="text-align: center;">
-	        ADD
-	    </button>
-	</center>
-    <hr>
-    <table class="table table-bordered table-responsive">
-        </table>
+		<button class="btn btn-success" onclick="AddData()" style="text-align: center;">
+				ADD
+		</button>
+</center>
+	<hr>
+	<table class="table table-bordered table-responsive">
+			</table>
 <form action="" method="POST">
-	<div id="tab" style="display: none;">
-		<table class="table table-bordered table-responsive" id="list" cellspacing="0px" cellpadding="20px" text-align="center">
-			<thead>
-				<tr>
-					<th>Qualification</th>
-					<th>Degree</th>
-		            <th>Subject/ Specialization</th>
-		            <th>School/ College</th>
-		            <th>Board/ University</th>
-		            <th>Year</th>
-		            <th>Regular/ Correspondence</th>
-		            <th>Maximum marks</th>
-		            <th>Obtained marks</th>
-		            <th>Percentage/ CGPA </th>
-					<th>Action</th>
-				</tr>
-			</thead>
-			<tbody>
+<div id="tab" style="display: none;">
+	<table class="table table-bordered table-responsive" id="list" cellspacing="0px" cellpadding="20px" text-align="center">
+		<thead>
+			<tr>
+				<th>Qualification</th>
+				<th>Degree</th>
+							<th>Subject/ Specialization</th>
+							<th>School/ College</th>
+							<th>Board/ University</th>
+							<th>Year</th>
+							<th>Regular/ Correspondence</th>
+							<th>Maximum marks</th>
+							<th>Obtained marks</th>
+							<th>Percentage/ CGPA </th>
+				<th>Action</th>
+			</tr>
+		</thead>
+		<tbody>
 
-			</tbody>
-		</table>
-	</div>
-    <input type="hidden" name="registration_id" value="141251112">
-    <input type="hidden" name="login_id" value="063565deb9c64f7af7c9a9a4fc2bc445">
+		</tbody>
+	</table>
+</div>
+	<input type="hidden" name="registration_id" value="172062547">
+	<input type="hidden" name="login_id" value="6c7b29c6b86f4a78b83a6d0a4c9aba6a">
 
-    <input type="hidden" name="controller" value="LoginHome">
-    <input type="hidden" name="function" value="btech_gate_jrf_net">
-    <input type="hidden" name="pid" value="phd_admission">
-    <button type="submit" name="submit" class="btn btn-primary" style="text-align: center;">SAVE &amp; NEXT </button>
+	<input type="hidden" name="controller" value="LoginHome">
+	<input type="hidden" name="function" value="btech_gate_jrf_net">
+	<input type="hidden" name="pid" value="phd_admission">
+	<button type="submit" name="submit" class="btn btn-primary" style="text-align: center;">SAVE &amp; NEXT </button>
 </form>
 
 <form action="" method="POST">
-    <input type="hidden" name="registration_id" value="141251112">
-    <input type="hidden" name="login_id" value="063565deb9c64f7af7c9a9a4fc2bc445">
+	<input type="hidden" name="registration_id" value="172062547">
+	<input type="hidden" name="login_id" value="6c7b29c6b86f4a78b83a6d0a4c9aba6a">
 
-    <input type="hidden" name="controller" value="LoginHome">
-    <input type="hidden" name="function" value="personal_information">
-    <input type="hidden" name="pid" value="phd_admission">
-    <a href="Registration_page_1.html"><button type="submit" name="submit" class="btn btn-warning" style="float: right;position: relative;top: -40px"> PREVIOUS </button></a>
+	<input type="hidden" name="controller" value="LoginHome">
+	<input type="hidden" name="function" value="personal_information">
+	<input type="hidden" name="pid" value="phd_admission">
+	<button type="submit" name="submit" class="btn btn-warning" style="float: right;position: relative;top: -40px"> PREVIOUS </button>
 </form>
+<script>
+$("#tab").on('click', '.btnDelete', function () {
+	$(this).closest('tr').remove();
+});
+function AddData() {
+	var rows = "";
+	var qualification = document.getElementById("qualification").value;
+	var degree = document.getElementById("degree").value;
+	var subject = document.getElementById("subject").value;
+	var collage = document.getElementById("collage").value;
+	var board = document.getElementById("board").value;
+	var year = document.getElementById("year").value;
+	var regular_cross = document.getElementById("regular_cross").value;
+	var max1 = document.getElementById("max1").value;
+	var obt1 = document.getElementById("obt1").value;
+	var per1 = document.getElementById("per1").value;
+	if(submit_form1()==true){
+		$("#tab").show();
+		rows += "<tr><td>" + qualification + "</td><td>" + degree + "</td><td>" + subject + "</td><td>" + collage + "</td><td>" + board + "</td><td>" + year + "</td><td>" + regular_cross + "</td><td>" + max1 + "</td><td>" + obt1 + "</td><td>" + per1 + "</td><td> <input type='hidden' name='qualification[]' value='" + qualification + "'> <input type='hidden' name='degree[]' value='" + degree + "'> <input type='hidden' name='subject[]' value='" + subject + "'> <input type='hidden' name='collage[]' value='" + collage + "'> <input type='hidden' name='board[]' value='" + board + "'> <input type='hidden' name='year[]' value='" + year + "'> <input type='hidden' name='regular_cross[]' value='" + regular_cross + "'> <input type='hidden' name='max[]' value='" + max1 + "'> <input type='hidden' name='obt[]' value='" + obt1 + "'> <input type='hidden' name='percent[]' value='" + per1 + "'> <button class='btnDelete'>Delete</button> </td></tr>";
+		$(rows).appendTo("#list tbody");
+		document.getElementById("qualification").value="";
+		document.getElementById("degree").value="";
+		document.getElementById("subject").value="";
+		document.getElementById("collage").value="";
+		document.getElementById("board").value="";
+		document.getElementById("year").value="";
+		document.getElementById("regular_cross").value="";
+		document.getElementById("max1").value="";
+		document.getElementById("obt1").value="";
+		document.getElementById("per1").value="";
+	}
+}
+</script>
+<script type="text/javascript">
+	function myFunction(val1, val2, val3) {
+			var max = document.getElementById(val1).value;//$('#spec8').val();
+			var obt = document.getElementById(val2).value;//$('#spec9').val();
+			if (+max < +obt){
+					alert("Please check Maximum marks should be greater to Obtained marks");
+					document.getElementById(val3).value = "";
+					document.getElementById(val2).value = "";
+			} else {
+					var per = obt * 100 / max;
+					var res = per.toString().substr(0, 5);
+					if (res > 0) {
+							document.getElementById(val3).value = res;
+					} else {
+							document.getElementById(val3).value = "";
+					}
+			}
+	}
+</script>
+
+<script type="text/javascript">
+	function submit_form1() {
+			dml = document.forms['frm_prod'];
+			len = dml.elements.length;
+			this.focus();
+			for (i = 0; i < len; i++) {
+				if (dml.elements[i].name == "qualification") {
+							if (dml.elements[i].value == "") {
+									alert("Qualification can not be left blank.");
+									dml.elements[i].focus();
+									return false;
+							}
+					}
+					if (dml.elements[i].name == "degree") {
+							var val = document.getElementById('degree').value;
+							if (dml.elements[i].value == "") {
+									alert("Degree can not be left blank.");
+									dml.elements[i].focus();
+									return false;
+							} else if (!val.match(/^[a-zA-Z0-9-,]+(\s{0,1}[a-zA-Z0-9-, ])*$/)) {
+									alert('Only alphabets and number are allowed in Degree');
+									dml.elements[i].focus();
+									return false;
+							}
+					}
+					if (dml.elements[i].name == "subject") {
+							var val = document.getElementById('subject').value;
+							if (dml.elements[i].value == "") {
+									alert("Subject can not be left blank.");
+									dml.elements[i].focus();
+									return false;
+							} else if (!val.match(/^[a-zA-Z0-9]+(\s{0,1}[a-zA-Z0-9 ])*$/)) {
+									alert('Only alphabets and number are allowed in Subject');
+									dml.elements[i].focus();
+									return false;
+							}
+					}
+					if (dml.elements[i].name == "collage") {
+							var val = document.getElementById('collage').value;
+							if (dml.elements[i].value == "") {
+									alert("College can not be left blank.");
+									dml.elements[i].focus();
+									return false;
+							} else if (!val.match(/^[a-zA-Z0-9-,]+(\s{0,1}[a-zA-Z0-9-, ])*$/)) {
+									alert('Only alphabets and number are allowed in College');
+									dml.elements[i].focus();
+									return false;
+							}
+					}
+					if (dml.elements[i].name == "board"){
+							var val = document.getElementById('board').value;
+							if (dml.elements[i].value == ""){
+									alert("Board/University can not be left blank")
+									dml.elements[i].focus();
+									return false;
+							} else if (!val.match(/^[a-zA-Z0-9-,]+(\s{0,1}[a-zA-Z0-9-, ])*$/)) {
+									alert('Only alphabets and number are allowed in Board/University');
+									dml.elements[i].focus();
+									return false;
+							}
+					}
+					if (dml.elements[i].name == "year") {
+							if (dml.elements[i].value == "") {
+									alert("Year can not be left blank.");
+									dml.elements[i].focus();
+									return false;
+							}
+					}
+					if (dml.elements[i].name == "regular_cross") {
+							if (dml.elements[i].value == "") {
+									alert(" 'Regular/Correspondence', can not be left blank.");
+									dml.elements[i].focus();
+									return false;
+							}
+					}
+					if (dml.elements[i].name == "max") {
+							if (dml.elements[i].value == "") {
+									alert("Maximum marks can not be left blank.");
+									dml.elements[i].focus();
+									return false;
+							}
+					}
+					if (dml.elements[i].name == "obt") {
+							if (dml.elements[i].value == "") {
+									alert("Obtained marks can not be left blank.");
+									dml.elements[i].focus();
+									return false;
+							}
+					}
+					if (dml.elements[i].name == "percent") {
+							if (dml.elements[i].value == "") {
+									alert("Percentage/ CGPA can not be left blank.");
+									dml.elements[i].focus();
+									return false;
+							}
+					}
+			}
+			return true;
+	}
+</script>			        </div>
 </body></html>
