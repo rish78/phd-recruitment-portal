@@ -11,10 +11,11 @@
 
 .container{
   text-align: left;
-  max-width: 500px;
+  max-width: 750px;
   margin: auto;
   padding:20px;
   box-shadow: 5px 5px 5px 5px grey;
+  display: block;
 }
 
 .asteriskField, .red{
@@ -76,5 +77,40 @@ span{
 
  .checkbox{
    display: flex;
+   margin: auto;
+ }
+
+ .page{
+   text-align: left;
+
+   margin: auto;
+   padding:10px;
+   box-shadow: 5px 5px 5px 5px grey;
+ }
+
+ .form-group {
+   padding: 5px;
+   margin: 5px;
+   display: block;
+   vertical-align: center;
+ }
+
+ .row{
+   padding: 5px;
+   margin: 5px;
+   display: inline;
+ }
+
+ .panel-body{
+   padding: auto;
+   margin: auto;
+ }
+
+
+
+ .button{
+   display: flex;
+   float: center;
+   text-align: center;
    margin: auto;
  }
