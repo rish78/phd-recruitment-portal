@@ -10,7 +10,7 @@
 				<div class="row">
 					<div class="col-md-9" id="content">
 <div class="form-group">
-    <form action="" method="POST" id="frm_prod" name="frm_prod" onsubmit="return submit_form1();">
+    <form action="" method="POST" id="frm_prod" name="frm_prod">
         <input type="hidden" name="registration_id" value="141251112">
         <input type="hidden" name="login_id" value="063565deb9c64f7af7c9a9a4fc2bc445">
 
@@ -18,7 +18,7 @@
         <input type="hidden" name="function" value="academic_qalification">
         <input type="hidden" name="pid" value="phd_admission">
         <div class="row">
-        <div class="col-lg-12 col-md-12">
+        <!-- <div class="col-lg-12 col-md-12">
             <section class="panel panel-default">
                 <header class="panel-heading">
                     Applying for the PhD Program
@@ -68,7 +68,7 @@
                     </div>
                 </div>
             </section>
-        </div>
+        </div> -->
     </div>
         <div class="row">
             <div class="col-md-6 col-sm-6">
@@ -83,13 +83,13 @@
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword1">Father's Name<span class="red">*</span></label>
-                            <input class="form-control" type="text" name="father" value="" placeholder="Father's Name">
+                            <input class="form-control" id="father-name" type="text" name="father" value="" placeholder="Father's Name">
                         </div>
                         <div class="form-group">
                             <label for="date">Date of Birth (DD/MM/YYYY)<span class="red">*</span></label>
                             <table>
                                 <tbody><tr>
-                                    <td><select name="dob_date" class="form-control">
+                                    <td><select name="dob_date" class="form-control" id="date">
                                             <option value="">DD</option>
                                                                                         <option value="01">1</option>
                                                                                      <option value="02">2</option>
@@ -124,7 +124,7 @@
                                                                                      <option value="31">31</option>
                                                                                    </select></td>
                                     <td>
-                                        <select name="dob_month" id="spec3" class="form-control">
+                                        <select name="dob_month" id="month" class="form-control" >
                                             <option value="">MM</option>
                                                                                                     <option value="01">JAN</option>
                                                                                                     <option value="02">FEB</option>
@@ -140,7 +140,7 @@
                                                                                                     <option value="12">DEC</option>
                                                                                     </select></td>
                                     <td>
-                                        <select name="dob_year" id="spec4" class="form-control">
+                                        <select name="dob_year" id="year" class="form-control" >
                                             <option value="">YYYY</option>
                                             <option value="2006">2006</option><option value="2005">2005</option><option value="2004">2004</option><option value="2003">2003</option><option value="2002">2002</option><option value="2001">2001</option><option value="2000">2000</option><option value="1999">1999</option><option value="1998">1998</option><option value="1997">1997</option><option value="1996">1996</option><option value="1995">1995</option><option value="1994">1994</option><option value="1993">1993</option><option value="1992">1992</option><option value="1991">1991</option><option value="1990">1990</option><option value="1989">1989</option><option value="1988">1988</option><option value="1987">1987</option><option value="1986">1986</option><option value="1985">1985</option><option value="1984">1984</option><option value="1983">1983</option><option value="1982">1982</option><option value="1981">1981</option><option value="1980">1980</option><option value="1979">1979</option><option value="1978">1978</option><option value="1977">1977</option><option value="1976">1976</option><option value="1975">1975</option><option value="1974">1974</option><option value="1973">1973</option><option value="1972">1972</option><option value="1971">1971</option><option value="1970">1970</option><option value="1969">1969</option><option value="1968">1968</option><option value="1967">1967</option><option value="1966">1966</option><option value="1965">1965</option><option value="1964">1964</option><option value="1963">1963</option>                                          </select>
                                     </td>
@@ -149,16 +149,16 @@
                         </div>
                         <div class="form-group">
                             <label>Gender<span class="red">*</span></label>
-                            <select class="form-control" name="gender">
+                            <select class="form-control" name="gender" id="gender">
                                 <option value="">Select</option>
-                                <option value="1">Male</option>
-                                <option value="2">Female</option>
-                                <option value="3">Unspecified</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="unspecified">Unspecified</option>
                             </select>
                         </div>
                         <div class="form-group">
                             <label>Category<span class="red">*</span></label>
-                            <select name="category" class="form-control">
+                            <select name="category" class="form-control" id="category">
                                 <option value="">Select</option>
                                 <option value="General">General</option>
                                 <option value="SC">Scheduled Caste (SC)</option>
@@ -169,7 +169,7 @@
                         </div>
                         <div class="form-group">
                             <label>Marital Status<span class="red">*</span></label>
-                            <select name="marital" class="form-control">
+                            <select name="marital" class="form-control" id="marital">
                                 <option value="">Select</option>
                                 <option value="Never Married">Never Married</option>
                                 <option value="Currently Married">Currently Married</option>
@@ -180,7 +180,7 @@
                         </div>
                         <div class="form-group">
                             <label>Nationality<span class="red">*</span></label>
-                            <select name="country" class="form-control">
+                            <select name="country" class="form-control" id="country">
                                 <option value="">Select</option>
                                                                         <option value="India">
                                             India
@@ -936,11 +936,11 @@
                     <div class="panel-body">
                         <div class="form-group">
                             <label for="exampleInputPassword1">Mobile<span class="red">*</span></label>
-                            <input type="text" class="form-control" name="mobile" placeholder="Mobile" value="" >
+                            <input type="text" class="form-control" id="mobile" name="mobile" placeholder="Mobile" value="" >
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword1">Alternate Phone No</label>
-                            <input type="text" class="form-control" placeholder="Alternate Phone No" name="alt_phone" value="">
+                            <input type="text" class="form-control" id="alt_phone" placeholder="Alternate Phone No" name="alt_phone" value="">
                         </div>
                         <div class="form-group">
                             <label for="exampleInputEmail1">Email<span class="red">*</span></label>
@@ -948,28 +948,28 @@
                         </div>
                         <div class="form-group">
                             <label for="exampleInputEmail1">Alternate Email</label>
-                            <input type="text" class="form-control" name="alt_mail" value="" placeholder="Enter email">
+                            <input type="text" class="form-control" id="alt_email" name="alt_mail" value="" placeholder="Enter email">
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword1">Aadhaar/ Passport No.<span class="red">*</span></label>
-                            <input type="text" class="form-control" name="aadhaar" onpaste="return false;" autocomplete="off" value="" placeholder="Enter No">
+                            <input type="text" class="form-control" id="aadhar" name="aadhaar" onpaste="return false;" autocomplete="off" value="" placeholder="Enter No">
                         </div>
 
                         <div class="form-group">
                             <label for="comment">Complete Postal Address<span class="red">*</span></label>
-                            <textarea class="form-control" name="address" id="address" rows="3" maxlength="300" onkeyup="myFunction_add(this.value)" onpaste="return false;" autocomplete="off"></textarea>
+                            <textarea class="form-control" name="address" id="address" rows="3" maxlength="300" onpaste="return false;" autocomplete="off"></textarea>
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword1">Fax</label>
-                            <input class="form-control" type="text" name="fax" value="" placeholder="Fax">
+                            <input class="form-control" id="fax" type="text" name="fax" value="" placeholder="Fax">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <button type="submit" name="submit" class="btn btn-primary"> SAVE &amp; NEXT </button>
+        <button type="submit" id="save-btn" name="submit" class="btn btn-primary"> SAVE &amp; NEXT </button>
     </form>
-    <form action="" method="POST" >
+    <form action="" >
     <input type="hidden" name="registration_id" value="141251112">
     <input type="hidden" name="login_id" value="063565deb9c64f7af7c9a9a4fc2bc445">
     <input type="hidden" name="controller" value="LoginHome">
@@ -980,5 +980,6 @@
 		        </div>
 			        </div>
     			</div>
+                <script src="./Registration_page_1.js"></script>
   </body>
 </html>

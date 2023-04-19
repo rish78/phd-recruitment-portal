@@ -3,11 +3,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="Description" content="PhD program for 2023-24-M">
 	<meta name="KeyWords" content="PhD program for 2023-24-M">
-	<link rel="icon" href="index.php?pid=favicon" sizes="16x16">
-	<link rel="stylesheet" href="index.php?pid=css_bootstrapmin">
-	<link rel="stylesheet" href="index.php?pid=css_style">
-	<link rel="stylesheet" href="index.php?pid=css_bootstrap_select">
-	<link rel="stylesheet" href="index.php?pid=css_fontawesomemin">
+
 	    <link rel="stylesheet" href="style.css">
 <body id="body">
 <div class="regis">
@@ -16,7 +12,7 @@
             BACK</a></h2>
 	<br>
 	<h5><b>Note:</b> *All Fields are mandatory. Please fill carefully and field data cannot be modified further.</h5>
-	<form action="" method="POST" id="frm_prod" name="frm_prod" onsubmit="return submit_form1();">
+	<form action=""  id="frm_prod" name="frm_prod">
     	<div class="form-group">
             <label>Applying for PhD Program in: <span class="asteriskField">*</span> </label>
             <select name="position" class="form-control" id="program" required="">
@@ -27,53 +23,41 @@
         <div class="form-group">
             <label>Full Name<span class="asteriskField">*</span> </label>
             <div>
-                <input class="form-control" type="text" name="name" id="name_full" placeholder="Enter Full Name" onpaste="return false;" autocomplete="off" value="">
+                <input class="form-control" id="name" type="text" name="name"  placeholder="Enter Full Name" onpaste="return false;" autocomplete="off" value="">
             </div>
         </div>
 		<div class="form-group">
 			<label>User ID<span class="asteriskField">*</span> </label>
             <div>
-            	<input class="form-control" type="text" name="reg_user_id" id="reg_user_id" maxlength="20" minlength="6" required="" value="">
+            	<input class="form-control" type="text" name="reg_user_id" id="reg_user_id" maxlength="20" minlength="6" required="" value="" id="user">
             	<small> User id can be minimum of 6 and max 20 char. Space is not allowed.</small>
             </div>
         </div>
         <div class="form-group">
         	<label>Email<span class="asteriskField">*</span> </label>
-            <div><input class="form-control" type="email" name="email" maxlength="100" required="" value=""></div>
+            <div><input class="form-control" type="email" name="email" maxlength="100" required="" value="" id="email"></div>
         </div>
         <div class="form-group">
         	<label>Mobile No.<span class="asteriskField">*</span> </label>
-            <div><input class="form-control" type="number" name="mobile" maxlength="10" required="" value="">
+            <div><input class="form-control" type="number" name="mobile" maxlength="10" required="" value="" id="phonenumber">
             	<small>Mobile No should be maximum 10 char</small></div>
         </div>
         <div class="form-group">
         	<label> Password (Should be alphanumeric with minimum 6 character, one digit and one special character)<span class="asteriskField">*</span> </label>
-        	<div><input class="form-control" type="password" name="login_pass" required="" value="">
+        	<div><input class="form-control" type="password" name="login_pass" required="" value="" id="password">
         	<small>Password should be minimum 6 chars and max 16 char</small></div>
         </div>
         <div class="form-group">
         	<label>Confirm Password<span class="asteriskField">*</span> </label>
-        	<div><input class="form-control" type="password" name="confirm_pass" required="" value=""></div>
+        	<div><input class="form-control" type="password" name="confirm_pass" required="" value="" id="confirmpassword"></div>
         </div>
-        <div class="form-group">
-        	<label>Hint Question<span class="asteriskField">*</span> </label>
-        	<div>
-                <select class="form-control" name="hint_que" required="">
-            		<option value="">---------</option>
-                    <option value="1">What is your exact time of birth?</option><option value="2">What is your all time favorite sports team?</option><option value="3">Who was your childhood hero?</option><option value="4">What is your pets name?</option><option value="5">What is your Mothers maiden name?</option><option value="6">What is your favourite food?</option><option value="7">What is the name of your first school?</option>            	</select>
-            </div>
-        </div>
-        <div class="form-group">
-        	<label>Hint Answer<span class="asteriskField">*</span> </label>
-        	<div>
-        		<input class="form-control" type="text" name="hint_ans" id="hint_ans" maxlength="50" required="" value="">
-        		<small>Hint Answer can be of max 50 char</small>
-        	</div>
-        </div>
-        <input type="hidden" name="controller" value="registration">
+        <!-- <input type="hidden" name="controller" value="registration">
         <input type="hidden" name="function" value="registration">
-        <input type="hidden" name="pid" value="phd_admission">
-        <button type="submit" name="submit" class="btn btn-success"> SUBMIT </button>
+        <input type="hidden" name="pid" value="phd_admission"> -->
+        <button type="submit" name="submit" class="btn btn-success" id="submit"> SUBMIT </button>
 		</form>
+        
 </div>
+<script src="./New_Registration.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
 </body></html>

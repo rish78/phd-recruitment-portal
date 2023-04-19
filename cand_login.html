@@ -12,28 +12,28 @@
     				<h2 class=""><i class="fa fa-user-circle-o fa-lg" aria-hidden="true"></i> Candidate Login</h2>
     			</div>
     			<div class="panel-body">
-    				<form action="" method="POST">
+    				<form action="">
     					<input type="hidden" name="controller" value="registration">
     					<input type="hidden" name="function" value="login">
     					<input type="hidden" name="pid" value="phd_admission">
     					<div>
     						<label>User Id:<span class="asteriskField">*</span> </label>
-    						<div> <input type="text" name="user_id" class="form-control"> </div>
+    						<div> <input type="text" name="user_id" class="form-control" id="userid"> </div>
     					</div>
     					<div>
     						<label>Password:<span class="asteriskField">*</span> </label>
-    						<div> <input type="password" name="user_pass" class="form-control"> </div>
+    						<div> <input type="password" name="user_pass" class="form-control" id="password"> </div>
     					</div>
-    					<button type="submit" name="submit" class="btn btn-lg btn-success btn-block"> SUBMIT </button>
+    					<button type="submit" name="submit" class="btn btn-lg btn-success btn-block" id="submit"> SUBMIT </button>
     				</form>
     				<div>
-    					<h5><i class="fa fa-user-plus"></i> <a href="Registration.html">New Registration</a></h5>
+    					<h5><i class="fa fa-user-plus"></i> <a href="New_Registration.html">New Registration</a></h5>
     				</div>
     				<div>
-    					<h5><i class="fa fa-unlock-alt"></i> <a href="forgotpd.html">Forgot Password</a></h5>
+    					<h5><i class="fa fa-unlock-alt"></i> <a href="forgot_password.html">Forgot Password</a></h5>
     				</div>
     				<div>
-    				         <h5><i class="fa fa-id-badge"></i><a href="useridforgot.html">Know User Id</a> </h5>
+    				         <h5><i class="fa fa-id-badge"></i><a href="forgot_userid.html">Know User Id</a> </h5>
     				</div>
     				<div>
     						<h5><i class="fa fa-id-badge"></i> <a href="forgotrid.html">Know Registration Id</a></h5></button>
@@ -42,5 +42,7 @@
     			</div>
     		</div>
         </div>
+		<script src="./cand_login.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
   </body>
 </html>
