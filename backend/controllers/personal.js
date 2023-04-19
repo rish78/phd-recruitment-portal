@@ -8,21 +8,18 @@ const updatePersonal = async(req, res) => {
     const {userid} = req;
 
     try{
-        const user = await User.findOne({userid: userid});
+        await User.updateOne({userid: userid}, 
+            {dob, fatherName, gender, category, marital, country, alternatePhone, alternateEmail, aadhar, address, fax}, function(err, docs) {
+                if(err) console.log(err);
 
-        if(user){
-            const {dob, fatherName, gender, category, marital, country, alternatePhone, alternateEmail, aadhar, address, fax} = req.body;
+                else{
+                    console.log(docs);
+                    res.status(200).json({msg: "Personal information updated!", docs})
+                }
+            })
 
-            let userInfo = {dob, fatherName, gender, category, marital, country, alternatePhone, alternateEmail, aadhar, address, fax}
 
-            await user.updateOne(userInfo);
-            await user.save();
-            console.log(user);
-            res.status(200).json({msg: "Personal details updated!"})
-        }
-        else{
-            res.status(400).json({msg: "User not found!"})
-        }
+           
 
     } catch (err) {
         console.log(err);

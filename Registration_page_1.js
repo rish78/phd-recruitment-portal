@@ -27,6 +27,37 @@ window.addEventListener("load", () => {
             mobile.value = user.phonenumber;
             const email = document.getElementById("email_id");
             email.value = user.email;
+            const fatherName = document.getElementById("father-name")
+            fatherName.value = user.fatherName;
+            const gender = document.getElementById("gender")
+            const category = document.getElementById("category")
+            const marital = document.getElementById("marital")
+            const country = document.getElementById("country")
+            gender.value = user.gender
+            category.value = user.category
+            marital.value = user.marital
+            country.value = user.country
+            const alternatePhone = document.getElementById("alt_phone")
+            const alternateEmail = document.getElementById("alt_email")
+            const aadhar = document.getElementById("aadhar")
+            const address = document.getElementById("address")
+            const fax = document.getElementById("fax")
+            alternatePhone.value = user.alternatePhone
+            alternateEmail.value = user.alternateEmail
+            aadhar.value = user.aadhar
+            address.value = user.address
+            fax.value = user.fax
+            let dob = user.dob;
+
+            let arr = dob.split('/')
+            console.log(arr)
+            const date = document.getElementById("date");
+            const month = document.getElementById("month");
+            const year = document.getElementById("year");
+            date.value = arr[0]
+            month.value = arr[1]
+            year.value = arr[2]
+
         })
     }
 })
@@ -39,7 +70,7 @@ button.onclick = (e) => {
     const month = document.getElementById("month").value;
     const year = document.getElementById("year").value;
 
-    let dob = date + " / " + month + " / " + year;
+    let dob = date + "/" + month + "/" + year;
     
     const fatherName = document.getElementById("father-name").value
     const gender = document.getElementById("gender").value
@@ -65,7 +96,11 @@ button.onclick = (e) => {
               credentials: 'same-origin',
             body: JSON.stringify({dob, fatherName, gender, category, marital, country, alternatePhone, alternateEmail, aadhar, address, fax}),
         })
-        .then((res) => res.json())
+        .then((res) =>{
+            if(res.status === 200){
+                location.href = "/Registration_page_2.html";
+            }
+        } )
         .then((data) =>{
             console.log(data);
 

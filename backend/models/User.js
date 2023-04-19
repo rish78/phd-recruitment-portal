@@ -69,7 +69,15 @@ const UserSchema = new mongoose.Schema({
     },
     fax: {
         type: String,
-    }
+    }, 
+    education: [{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Academics'
+    }],
+    work : [{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Work'
+    }]
 
 })
 
