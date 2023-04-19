@@ -3,153 +3,351 @@
   <head>
     <meta charset="utf-8">
     <title>Registration Page 5</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style_2.css">
   </head>
   <body>
-    <div class="page_5" id="content">
-						<style type="text/css">.red{ color: red; font-weight: bold; font-size: 11pt; }</style>
-<form action="" method="POST" enctype="multipart/form-data" id="frm_prod" name="frm_prod" onsubmit="return submit_form1();">
-    <input type="hidden" name="registration_id" value="141251112">
-    <input type="hidden" name="login_id" value="063565deb9c64f7af7c9a9a4fc2bc445">
+    <div class="col-md-9" id="content">
+  						<style type="text/css">.red{ color: red; font-weight: bold; font-size: 11pt; }</style>
+  <form action="" method="POST" enctype="multipart/form-data" id="frm_prod" name="frm_prod" onsubmit="return submit_form1();">
+      <input type="hidden" name="registration_id" value="172062547">
+      <input type="hidden" name="login_id" value="6c7b29c6b86f4a78b83a6d0a4c9aba6a">
 
-    <input type="hidden" name="controller" value="LoginHome">
-    <input type="hidden" name="function" value="final_submission">
-    <input type="hidden" name="pid" value="phd_admission">
-    <section class="panel panel-default">
-        <header class="panel-heading">
-            Referee Details:<span class="red">*</span>
-        </header>
-        <div class="panel-body">
-            <div class="form-group row">
-                <label class="col-sm-1 ">Name<b class="red">*</b> </label>
-                <div class="col-sm-3">
-                    <input class="form-control" name="name_ref1" type="text" value="">
-                </div>
-                <label class="col-sm-1 col-form-label"> Name<span class="red">*</span> </label>
-                <div class="col-sm-3">
-                    <input class="form-control" type="text" name="name_ref2" value=""></div>
-                <label class="col-sm-1 col-form-label"> Name </label>
-                <div class="col-sm-3">
-                    <input class="form-control" type="text" name="name_ref3" value="">
-                </div>
-            </div>
-            <div class="form-group row">
-                <label class="col-sm-1 ">Phone<span class="red">*</span></label>
-                <div class="col-sm-3">
-                    <input class="form-control" name="phone1" type="text" size="20" value="">
-                </div>
-                <label class="col-sm-1 col-form-label"> Phone<span class="red">*</span> </label>
-                <div class="col-sm-3">
-                    <input class="form-control" name="phone2" type="text" size="20" value=""></div>
-                <label class="col-sm-1 col-form-label"> Phone </label>
-                <div class="col-sm-3">
-                    <input class="form-control" name="phone3" type="text" size="20" value=""></div>
-            </div>
-            <div class="form-group row">
-                <label class="col-sm-1 ">Email<b class="red">*</b></label>
-                <div class="col-sm-3"><input type="text" name="email1" class="form-control" id="mail1" value="">
-                </div>
-                <label class="col-sm-1 col-form-label"> Email<span class="red">*</span></label>
-                <div class="col-sm-3"><input type="text" class="form-control" name="email2" id="mail2" value=""></div>
-                <label class="col-sm-1 col-form-label"> Email </label>
-                <div class="col-sm-3"><input type="text" class="form-control" name="email3" id="mail3" value=""></div>
-            </div>
-            <div class="form-group row">
-                <label class="col-sm-1 col-form-label">Address<span class="red">*</span></label>
-                <div class="col-sm-3">
-                    <textarea class="form-control" maxlength="300" onpaste="return false;" autocomplete="off" onkeyup="myFunction_add(this.value)" name="address_ref1" rows="2"></textarea>
-                </div>
-                <label class="col-sm-1 col-form-label">Address<span class="red">*</span></label>
-                <div class="col-sm-3">
-                    <textarea class="form-control" maxlength="300" onpaste="return false;" autocomplete="off" onkeyup="myFunction_add(this.value)" name="address_ref2" rows="2"></textarea>
-                </div>
-                <label class="col-sm-1 col-form-label">Address</label>
-                <div class="col-sm-3">
-                    <textarea class="form-control" maxlength="300" onpaste="return false;" autocomplete="off" onkeyup="myFunction_add(this.value)" name="address_ref3" rows="2"></textarea>
-                </div>
-            </div> <hr>
-            <div class="form-group row">
-                <label class="col-sm-4 col-form-label">Any other relevant information</label>
-                <div class="col-sm-8">
-                    <textarea class="form-control" name="reason_job" rows="2" maxlength="500" onpaste="return false;" autocomplete="off" onkeyup="myFunction_add(this.value)"></textarea>
-                </div>
-            </div><hr>
-            <div class="form-group row">
-                <label class="col-sm-4">
-                    <span class="red">Must</span> upload multiple files (Academics, Work experience etc.)
-                    <span class="red">Maximum total upload size is 20 mb *</span>
-                    <span>Preferred: Merged all file into single PDF</span></label>
-                <div class="col-sm-8">
-                    <table class="table table-bordered table-responsive" id="methods_file">
+      <input type="hidden" name="controller" value="LoginHome">
+      <input type="hidden" name="function" value="final_submission">
+      <input type="hidden" name="pid" value="phd_admission">
+      <section class="panel panel-default">
+          <header class="panel-heading">
+              Referee Details:<span class="red">*</span>
+          </header>
+          <div class="panel-body">
+              <div class="form-group row">
+                  <label class="col-sm-1 ">Name<b class="red">*</b> </label>
+                  <div class="col-sm-3">
+                      <input class="form-control" name="name_ref1" type="text" value="">
+                  </div>
+                  <label class="col-sm-1 col-form-label"> Name<span class="red">*</span> </label>
+                  <div class="col-sm-3">
+                      <input class="form-control" type="text" name="name_ref2" value=""></div>
+                  <label class="col-sm-1 col-form-label"> Name </label>
+                  <div class="col-sm-3">
+                      <input class="form-control" type="text" name="name_ref3" value="">
+                  </div>
+              </div>
+              <div class="form-group row">
+                  <label class="col-sm-1 ">Phone<span class="red">*</span></label>
+                  <div class="col-sm-3">
+                      <input class="form-control" name="phone1" type="text" size="20" value="">
+                  </div>
+                  <label class="col-sm-1 col-form-label"> Phone<span class="red">*</span> </label>
+                  <div class="col-sm-3">
+                      <input class="form-control" name="phone2" type="text" size="20" value=""></div>
+                  <label class="col-sm-1 col-form-label"> Phone </label>
+                  <div class="col-sm-3">
+                      <input class="form-control" name="phone3" type="text" size="20" value=""></div>
+              </div>
+              <div class="form-group row">
+                  <label class="col-sm-1 ">Email<b class="red">*</b></label>
+                  <div class="col-sm-3"><input type="text" name="email1" class="form-control" id="mail1" value="">
+                  </div>
+                  <label class="col-sm-1 col-form-label"> Email<span class="red">*</span></label>
+                  <div class="col-sm-3"><input type="text" class="form-control" name="email2" id="mail2" value=""></div>
+                  <label class="col-sm-1 col-form-label"> Email </label>
+                  <div class="col-sm-3"><input type="text" class="form-control" name="email3" id="mail3" value=""></div>
+              </div>
+              <div class="form-group row">
+                  <label class="col-sm-1 col-form-label">Address<span class="red">*</span></label>
+                  <div class="col-sm-3">
+                      <textarea class="form-control" maxlength="300" onpaste="return false;" autocomplete="off" onkeyup="myFunction_add(this.value)" name="address_ref1" rows="2"></textarea>
+                  </div>
+                  <label class="col-sm-1 col-form-label">Address<span class="red">*</span></label>
+                  <div class="col-sm-3">
+                      <textarea class="form-control" maxlength="300" onpaste="return false;" autocomplete="off" onkeyup="myFunction_add(this.value)" name="address_ref2" rows="2"></textarea>
+                  </div>
+                  <label class="col-sm-1 col-form-label">Address</label>
+                  <div class="col-sm-3">
+                      <textarea class="form-control" maxlength="300" onpaste="return false;" autocomplete="off" onkeyup="myFunction_add(this.value)" name="address_ref3" rows="2"></textarea>
+                  </div>
+              </div> <hr>
+              <div class="form-group row">
+                  <label class="col-sm-4 col-form-label">Any other relevant information</label>
+                  <div class="col-sm-8">
+                      <textarea class="form-control" name="reason_job" rows="2" maxlength="500" onpaste="return false;" autocomplete="off" onkeyup="myFunction_add(this.value)"></textarea>
+                  </div>
+              </div><hr>
+              <div class="form-group row">
+                  <label class="col-sm-4">
+                      <span class="red">Must</span> upload multiple files (Academics, Work experience etc.)
+                      <span class="red">Maximum total upload size is 20 mb *</span>
+                      <span>Preferred: Merged all file into single PDF</span></label>
+                  <div class="col-sm-8">
+                      <table class="table table-bordered table-responsive" id="methods_file">
 
-                        <tbody><tr><td colspan="3"><label>Academic Documents </label><span> (in a single PDF)</span><span class="red"> *</span><br>
-                                <span class="btn btn-default btn-file">
-                                    <input type="file" name="file_academic" accept=".pdf,.PDF" required="">
-                                </span></td></tr>
+                          <tbody><tr><td colspan="3"><label>Academic Documents </label><span> (in a single PDF)</span><span class="red"> *</span><br>
+                                  <span class="btn btn-default btn-file">
+                                      <input type="file" name="file_academic" accept=".pdf,.PDF" required="">
+                                  </span></td></tr>
 
-                        <tr><td colspan="3"><label>Experience Documents</label><span> (in a single PDF)</span><span class="red"> *</span><br>
-                        <span class="btn btn-default btn-file">
-                            <input type="file" name="file_research" accept=".pdf,.PDF" required="">
-                        </span></td></tr>
-                                                <tr><td colspan="3"><label>Upload photograph <span class="red"> *</span> (Passport Size only)</label>
-                            <br>
-                            <span class="btn btn-default btn-file">
-                                <input type="file" name="photo_graph" id="photo_graph" onchange="return fileValidation();">
-                            </span>
-                        </td></tr>
-                                                <tr>
-                            <td>
-                                <label>Any other relevant information </label> <span>(in a single PDF or multiple PDFs)</span><br>
-                                <span class="btn btn-default btn-file">
-                                    <input type="file" name="file_paper[]" accept=".pdf,.PDF">
-                                </span>
-                            </td>
-                            <td colspan="2">
-                            </td>
-                        </tr>
+                          <tr><td colspan="3"><label>Experience Documents</label><span> (in a single PDF)</span><span class="red"> *</span><br>
+                          <span class="btn btn-default btn-file">
+                              <input type="file" name="file_research" accept=".pdf,.PDF" required="">
+                          </span></td></tr>
+                                                  <tr><td colspan="3"><label>Upload photograph <span class="red"> *</span> (Passport Size only)</label>
+                              <br>
+                              <span class="btn btn-default btn-file">
+                                  <input type="file" name="photo_graph" id="photo_graph" onchange="return fileValidation();">
+                              </span>
+                          </td></tr>
+                                                  <tr>
+                              <td>
+                                  <label>Any other relevant information </label> <span>(in a single PDF or multiple PDFs)</span><br>
+                                  <span class="btn btn-default btn-file">
+                                      <input type="file" name="file_paper[]" accept=".pdf,.PDF">
+                                  </span>
+                              </td>
+                              <td colspan="2">
+                                  <img src="/index.php?pid=img_plus" title="Add a new Item" style="cursor:pointer;" onclick="addRow_file('methods_file', 'file_paper', '0')">
+                              </td>
+                          </tr>
 
-                    </tbody></table>
-                </div>
-                <div style="text-align: center;">
-                    <button type="submit" name="submit" class="btn btn-success"> SAVE</button>
-                </div>
-            </div>
-        </div>
+                      </tbody></table>
+                  </div>
+                  <div style="text-align: center;">
+                      <button type="submit" name="submit" class="btn btn-success"> SAVE</button>
+                  </div>
+              </div>
+          </div>
 
-    </section>
+      </section>
 
-</form><br>
-<table class="table table-bordered table-responsive">
-    </table>
-<form action="" method="POST">
-    <input type="hidden" name="registration_id" value="141251112">
-    <input type="hidden" name="login_id" value="063565deb9c64f7af7c9a9a4fc2bc445">
+  </form><br>
+  <table class="table table-bordered table-responsive">
+      </table>
+  <form action="" method="POST">
+      <input type="hidden" name="registration_id" value="172062547">
+      <input type="hidden" name="login_id" value="6c7b29c6b86f4a78b83a6d0a4c9aba6a">
 
-    <input type="hidden" name="controller" value="LoginHome">
-    <input type="hidden" name="function" value="preview">
-    <input type="hidden" name="pid" value="phd_admission">
-    <hr>
-            <div class="form-group row">
-                <label class="col-sm-4 ">Declaration</label>
-                <div class="col-sm-8">
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox" name="declaration" id="declaration" value="1" required="">
-                            I declare that information furnished above is true to the best of my knowledge and belief.
-                        </label>
-                    </div>
-                </div>
-            </div>
-    <button type="submit" name="submit" class="btn btn-primary" style="text-align: center;">NEXT &amp; PREVIEW </button>
-</form>
-<form action="" method="POST">
-    <input type="hidden" name="registration_id" value="141251112">
-    <input type="hidden" name="login_id" value="063565deb9c64f7af7c9a9a4fc2bc445">
-    <input type="hidden" name="controller" value="LoginHome">
-    <input type="hidden" name="function" value="work_experience">
-    <input type="hidden" name="pid" value="phd_admission">
-    <button type="submit" name="submit" class="btn btn-warning" style="float: right;position: relative;top: -40px"> PREVIOUS </button>
-</form>
-			        </div>
+      <input type="hidden" name="controller" value="LoginHome">
+      <input type="hidden" name="function" value="preview">
+      <input type="hidden" name="pid" value="phd_admission">
+      <hr>
+              <div class="form-group row">
+                  <label class="col-sm-4 ">Declaration</label>
+                  <div class="col-sm-8">
+                      <div class="checkbox">
+                          <label>
+                              <input type="checkbox" name="declaration" id="declaration" value="1" required="">
+                              I declare that information furnished above is true to the best of my knowledge and belief.
+                          </label>
+                      </div>
+                  </div>
+              </div>
+      <button type="submit" name="submit" class="btn btn-primary" style="text-align: center;">NEXT &amp; PREVIEW </button>
+  </form>
+  <form action="" method="POST">
+      <input type="hidden" name="registration_id" value="172062547">
+      <input type="hidden" name="login_id" value="6c7b29c6b86f4a78b83a6d0a4c9aba6a">
+      <input type="hidden" name="controller" value="LoginHome">
+      <input type="hidden" name="function" value="work_experience">
+      <input type="hidden" name="pid" value="phd_admission">
+      <button type="submit" name="submit" class="btn btn-warning" style="float: right;position: relative;top: -40px"> PREVIOUS </button>
+  </form>
+  <script type="text/javascript">
+      function myFunction_add(address) {
+          if (/[^a-zA-Z0-9\n-\/ ]/.test(address)) {
+              alert("Please enter only alpha numeric value in relevant information, no special characters's are allowed");
+              address.focus();
+              address.value = "";
+              return false;
+          }
+      }
+      function fileValidation() {
+          var fileInput = document.getElementById('photo_graph');
+          var filePath = fileInput.value;
+          var allowedExtensions = /(\.jpg|\.jpeg|\.png)$/i;
+          if (!allowedExtensions.exec(filePath)) {
+              alert('Please upload file having extensions .jpeg/.jpg/.png/ only.');
+              fileInput.value = '';
+              return false;
+          } else {
+              if (fileInput.files && fileInput.files[0]) {
+                  var reader = new FileReader();
+                  reader.onload = function (e) {
+                      document.getElementById('imagePreview').innerHTML = '<img src="' + e.target.result + '"/ style="width:100px; height:100px;">';
+                  };
+                  reader.readAsDataURL(fileInput.files[0]);
+              }
+          }
+      }
+      function fileValidation_all() {
+          var fileInput = document.getElementById("photo_graph1");
+          var filePath = fileInput.value;
+          var allowedExtensions = /(\.jpg|\.jpeg|\.png|\.pdf)$/i;
+          if (!allowedExtensions.exec(filePath)) {
+              alert('Please upload file having extensions .jpeg/.jpg/.png/ .pdf/ only.');
+              fileInput.value = '';
+              return false;
+          }
+      }
+  </script>
+  <script type="text/javascript">
+      function addRow_file(DOC_ID, ARR_METHOD, COUNT) {
+          var countval = (COUNT + 1);
+          var cntTr = $("#" + DOC_ID + " tr").length;
+          if (cntTr > 6) {
+              alert("Maximun five files can be added");
+              return false;
+          }
+          $("#" + DOC_ID + " tr:last-child td:last-child img").remove();
+
+          var tdStr = '<tr>';
+
+          tdStr += '<td><span class="btn btn-default btn-file"><input type="file" name="' + ARR_METHOD + '[]" id="photo_graph1" onchange="return fileValidation_all();" class="hid_id"> </td></span><td><img src="/index.php?pid=img_cross" title="Remove this Item" onClick="removeRow_file(this,\'' + DOC_ID + '\')" style="cursor:pointer;" /></td><td ><img src="/index.php?pid=img_plus" title="Add this Item" onClick="addRow_file(\'' + DOC_ID + '\',\'' + ARR_METHOD + '\',\'' + countval + '\')" style="cursor:pointer;" /></td>';
+          tdStr += '</tr>';
+
+          $("#" + DOC_ID + "").each(
+                  function () {
+                      var $table = $(this);
+                      if ($('tbody', this).length > 0) {
+                          $('tbody', this).append(tdStr);
+                      } else
+                      {
+                          $(this).append(tdStr);
+                      }
+                  }
+
+          );
+      }
+
+      function removeRow_file(imgRef, imgid) {
+          var cntTr = $("#" + imgid + " tr").length;
+          if (cntTr > 1) {
+              $("#" + imgid + " tr td:last-child img").remove();
+              $(imgRef).parent().parent().remove();
+
+              $("#" + imgid + " tr:last-child td:last-child").html('<img src="/index.php?pid=img_plus" title="Add this Item" onClick="addRow_file(\'' + imgid + '\',\'' + "specialty" + '\')" style="cursor:pointer;" />');
+          } else {
+              alert('Last row can\'t be deleted');
+          }
+      }
+
+  </script>
+  <script type="text/javascript">
+      function submit_form1() {
+          dml = document.forms['frm_prod'];
+
+          len = dml.elements.length;
+          this.focus();
+          for (i = 0; i < len; i++) {
+              var declaration = document.getElementById('declaration').checked;
+
+              if (dml.elements[i].name == "name_ref1") {
+                  if (dml.elements[i].value == "") {
+                      alert("Name of first refree can not be left blank");
+                      dml.elements[i].focus();
+                      return false;
+                  }
+              }
+
+              if (dml.elements[i].name == "phone1") {
+                  if (dml.elements[i].value == "") {
+                      alert("Phone no. of first refree can not be left blank");
+                      dml.elements[i].focus();
+                      return false;
+                  }
+              }
+              if (dml.elements[i].name == "email1") {
+                  var mail = document.getElementById('mail1').value;
+                  if (dml.elements[i].value == "") {
+                      alert("Email of first refree can not be left blank");
+                      dml.elements[i].focus();
+                      return false;
+                  } else if (!mail.match(/^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/))
+                  {
+                      alert('Enter a valid Email of first refree');
+                      dml.elements[i].focus();
+                      return false;
+                  }
+              }
+              if (dml.elements[i].name == "address_ref1") {
+                  if (dml.elements[i].value == "") {
+                      alert("Address of first refree can not be left blank");
+                      dml.elements[i].focus();
+                      return false;
+                  }
+              }
+              if (dml.elements[i].name == "name_ref2") {
+                  if (dml.elements[i].value == "") {
+                      alert("Name of second refree can not be left blank");
+                      dml.elements[i].focus();
+                      return false;
+                  }
+              }
+              if (dml.elements[i].name == "phone2") {
+                  if (dml.elements[i].value == "") {
+                      alert("Phone no. of second refree can not be left blank");
+                      dml.elements[i].focus();
+                      return false;
+                  }
+              }
+              if (dml.elements[i].name == "email2") {
+                  var mail = document.getElementById('mail2').value;
+                  if (dml.elements[i].value == "") {
+                      alert("Email of second refree can not be left blank");
+                      dml.elements[i].focus();
+                      return false;
+                  } else if (!mail.match(/^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/))
+                  {
+                      alert('Enter a valid email of second refree');
+                      dml.elements[i].focus();
+                      return false;
+                  }
+              }
+              if (dml.elements[i].name == "address_ref2") {
+                  if (dml.elements[i].value == "") {
+                      alert("Address of second refree can not be left blank");
+                      dml.elements[i].focus();
+                      return false;
+                  }
+              }
+              if (dml.elements[i].name == "file_name[]") {
+                  if (dml.elements[i].value == "") {
+                      alert("Please upload multiple files (Academics, work experience, publications etc.)");
+                      dml.elements[i].focus();
+                      return false;
+                  }
+              }
+              if (dml.elements[i].name == "photo_graph") {
+                  if (dml.elements[i].value == "") {
+                      alert("Passport size photograph must be uploaded");
+                      dml.elements[i].focus();
+                      return false;
+                  }
+              }
+
+          }
+          var exp_doc = document.getElementsByName("file_name[]");
+          var totalFileSize = 0;
+          for (var j = 0; j < exp_doc.length; j++) {
+              totalFileSize = totalFileSize + exp_doc[j].files.item(0).size;
+          }
+          //File size in MB
+          totalFileSize = (totalFileSize / (1024 * 1024));
+          if (totalFileSize > 20) {
+              alert("Documents: maximum total upload size is less than 20Mb ");
+              return false;
+          }
+          return true;
+      }
+  </script>
+
+  <script>
+     function viewUpFile(t){
+      var upfile = $('#btndownload').val();
+      var a = document.createElement("a"); //Create <a>
+      a.href = "data:application/octet-stream;base64," + upfile; //Image Base64 Goes here
+      a.download = $(t).attr('rel'); //File name Here
+      a.click();
+     }
+   </script>			        </div>
   </body>
 </html>
