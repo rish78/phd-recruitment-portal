@@ -6,282 +6,478 @@
         <link rel="stylesheet" href="style_2.css">
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-9" id="content">
-          <style type="text/css">.red{ color: red; font-weight: bold; font-size: 11pt; }</style>
+    <div class="centi">
+    <div class="col-md-9" id="content">
+						<style type="text/css">.red{ color: red; font-weight: bold; font-size: 11pt; }</style>
 <form action="" method="POST" enctype="multipart/form-data" id="frm_prod" name="frm_prod" onsubmit="return submit_form1();">
-  <input type="hidden" name="registration_id" value="141251112">
-  <input type="hidden" name="login_id" value="063565deb9c64f7af7c9a9a4fc2bc445">
-  <input type="hidden" name="academic_id_up" value="">
+    <input type="hidden" name="registration_id" value="172062547">
+    <input type="hidden" name="login_id" value="6c7b29c6b86f4a78b83a6d0a4c9aba6a">
+    <input type="hidden" name="academic_id_up" value="">
 
-  <input type="hidden" name="controller" value="LoginHome">
-  <input type="hidden" name="function" value="work_experience">
-  <input type="hidden" name="pid" value="phd_admission">
+    <input type="hidden" name="controller" value="LoginHome">
+    <input type="hidden" name="function" value="work_experience">
+    <input type="hidden" name="pid" value="phd_admission">
 
-  <div class="row">
-      <div class="col-lg-12 col-md-12">
-          <section class="panel panel-default">
-              <header class="panel-heading">
-                  B.Tech. from an IIT
-              </header>
-              <div class="panel-body">
-                  <div class="form-group row">
-                      <div class="col-md-4">
-                          <label class="radio-inline">
-                              <input type="radio" name="btech" id="btech" value="Yes">YES</label>
-                          <label class="radio-inline">
-                              <input type="radio" name="btech" id="btech1" value="No" checked="">NO</label>
-                      </div>
-                  </div>
-              </div>
-          </section>
-      </div>
-  </div>
-  <div class="row">
-      <div class="col-lg-12 col-md-12">
-          <section class="panel panel-default">
-              <header class="panel-heading">
-                  GATE, JRF, NET, INSPIRE details (Select the applicability criterion and provide details). <span class="red"></span>
-              </header>
-              <div class="panel-body">
-                  <div class="form-group row">
-                      <div class="col-md-2">
-                          <div class="form-group">
-                              <label for="exampleInputEmail1">Gate <span class="red"></span></label>
-                              <select name="gate" id="gate" class="form-control required" onchange="myGateFunction('gate')">
-                                  <option value="">Select</option>
-                                  <option value="Yes">Yes</option>
-                                  <option value="No" selected="">No</option>
-                              </select>
-                          </div></div>
-                      <div class="col-md-4">
-                          <div class="form-group">
-                              <label for="exampleInputEmail1">Subject<span class="red"></span></label>
-                              <select name="gate_sub" id="gate_sub" class="form-control">
-                                  <option value="">Select</option>
-                                  <option value="AE">AE</option>
-                                  <option value="AG">AG</option>
-                                  <option value="AR">AR</option>
-                                  <option value="BM">BM</option>
-                                  <option value="BT">BT</option>
-                                  <option value="CE">CE</option>
-                                  <option value="CH">CH</option>
-                                  <option value="CS">CS</option>
-                                  <option value="CY">CY</option>
-                                  <option value="EC">EC</option>
-                                  <option value="EE">EE</option>
-                                  <option value="ES">ES</option>
-                                  <option value="EY">EY</option>
-                                  <option value="GE">GE</option>
-                                  <option value="GG">GG</option>
-                                  <option value="IN">IN</option>
-                                  <option value="MA">MA</option>
-                                  <option value="ME">ME</option>
-                                  <option value="MN">MN</option>
-                                  <option value="MT">MT</option>
-                                  <option value="NM">NM</option>
-                                  <option value="PE">PE</option>
-                                  <option value="PH">PH</option>
-                                  <option value="PI">PI</option>
-                                  <option value="ST">ST</option>
-                                  <option value="TF">TF</option>
-                                  <option value="XE">XE</option>
-                                  <option value="XH">XH</option>
-                                  <option value="XL">XL</option>
-                              </select>
-                          </div></div>
-                      <div class="col-md-2">
-                          <div class="form-group">
-                              <label for="exampleInputEmail1">Qualifying Year <span class="red"></span></label>
-                              <select name="gate_valid" id="gate_valid" class="form-control required">
-                                  <option value="">Select</option>
-                                  <option value="2023">2023</option><option value="2022">2022</option><option value="2021">2021</option><option value="2020">2020</option><option value="2019">2019</option><option value="2018">2018</option><option value="2017">2017</option><option value="2016">2016</option><option value="2015">2015</option><option value="2014">2014</option><option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option><option value="2008">2008</option>                                </select>
-                          </div></div>
-                      <div class="col-md-2">
-                          <div class="form-group">
-                              <label for="exampleInputEmail1">Roll no <span class="red"></span></label>
-                              <input type="text" name="gate_roll" id="gate_roll" value="" class="form-control" placeholder="Roll no">
-                          </div></div>
-                      <div class="col-md-2">
-                          <div class="form-group">
-                              <label for="exampleInputEmail1">Score<span class="red"></span></label>
-                              <input type="number" name="gate_score" id="gate_score" value="" class="form-control" placeholder="Score">
-                          </div></div>
-                  </div>
-                  <div class="form-group row">
-                      <div class="col-md-2">
-                          <div class="form-group">
-                              <label for="exampleInputEmail1">NET <span class="red"></span></label>
-                              <select name="net" id="net" class="form-control required" onchange="myNetFunction('net')">
-                                  <option value="">Select</option>
-                                  <option value="Yes">Yes</option>
-                                  <option value="No" selected="">No</option>
-                              </select>
-                          </div></div>
-                      <div class="col-md-4">
-                          <div class="form-group">
-                              <label for="exampleInputEmail1">Subject<span class="red"></span></label>
-                              <input type="text" name="net_sub" id="net_sub" value="" class="form-control" placeholder="Subject">
-                          </div></div>
-                      <div class="col-md-2">
-                          <div class="form-group">
-                              <label for="exampleInputEmail1">Qualifying Year <span class="red"></span></label>
-                              <select name="net_year" id="net_year" class="form-control required">
-                                  <option value="">Select</option>
-                                  <option value="2023">2023</option><option value="2022">2022</option><option value="2021">2021</option><option value="2020">2020</option><option value="2019">2019</option><option value="2018">2018</option><option value="2017">2017</option><option value="2016">2016</option><option value="2015">2015</option><option value="2014">2014</option><option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option><option value="2008">2008</option>                                </select>
-                          </div>
-                      </div>
-                      <div class="col-md-2">
-                          <div class="form-group">
-                              <label for="exampleInputEmail1">Roll no <span class="red"></span></label>
-                              <input type="text" name="net_roll" id="net_roll" value="" class="form-control" placeholder="Roll no">
-                          </div>
-                      </div>
-                      <div class="col-md-2">
-                          <div class="form-group">
-                              <label for="exampleInputEmail1">Fellowship<span class="red"></span></label>
-                              <select name="net_fellow" id="net_fellow" class="form-control">
-                                  <option value="">Select</option>
-                                  <option value="LS">LS</option>
-                                  <option value="CSIR">CSIR</option>
-                              </select>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="form-group row">
-                      <div class="col-md-2">
-                          <div class="form-group">
-                              <label for="exampleInputEmail1">JRF <span class="red"></span></label>
-                              <select name="jrf" class="form-control required" id="jrf" onchange="myJrfFunction('jrf')">
-                                  <option value="">Select</option>
-                                  <option value="Yes">Yes</option>
-                                  <option value="No" selected="">No</option>
-                              </select>
-                          </div></div>
-                      <div class="col-md-4">
-                          <div class="form-group">
-                              <label for="exampleInputEmail1">Fellowship body and Subject<span class="red"></span></label>
-                              <input type="text" name="jrf_fellow" id="jrf_fellow" value="" class="form-control" placeholder="Fellowship body">
-
-                          </div></div>
-                      <div class="col-md-2">
-                          <div class="form-group">
-                              <label for="exampleInputEmail1">Qualifying Year <span class="red"></span></label>
-                              <select name="jrf_valid" class="form-control required" id="jrf_valid">
-                                  <option value="">Select</option>
-                                  <option value="2023">2023</option><option value="2022">2022</option><option value="2021">2021</option><option value="2020">2020</option><option value="2019">2019</option><option value="2018">2018</option><option value="2017">2017</option><option value="2016">2016</option><option value="2015">2015</option><option value="2014">2014</option><option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option><option value="2008">2008</option>                                </select>
-                          </div></div>
-                      <div class="col-md-2">
-                          <div class="form-group">
-                              <label for="exampleInputEmail1">Roll No <span class="red"></span></label>
-                              <input type="text" name="jrf_roll" id="jrf_roll" value="" class="form-control" placeholder="Roll No">
-                          </div></div>
-
-                      <div class="col-md-2">
-                          <div class="form-group">
-                              <label for="exampleInputEmail1">Score/Rank <span class="red"></span></label>
-                              <input type="number" name="jrf_score" id="jrf_score" value="" class="form-control" placeholder="Score/Rank">
-                          </div></div>
-
-
-                  </div>
-                  <div class="form-group row">
-                      <div class="col-md-3">
-                          <div class="form-group">
-                              <label for="exampleInputEmail1">Other Examination <span class="red"></span></label>
-                              <select name="other_exam" class="form-control required" id="other_exam" onchange="myOtherFunction('other_exam')">
-                                  <option value="">Select</option>
-                                  <option value="Yes">Yes</option>
-                                  <option value="No" selected="">No</option>
-                              </select>
-                          </div>
-                      </div>
-                      <div class="col-md-4">
-                          <div class="form-group">
-                              <label for="exampleInputEmail1">Details<span class="red"></span></label>
-                              <input type="text" name="other_details" id="other_details" value="" class="form-control" placeholder="Details">
-                          </div>
-                      </div>
-                  </div>
-                  <div class="form-group row" style="display: none;">
-                      <div class="col-md-2">
-                          <div class="form-group">
-                              <label for="exampleInputEmail1">Name of IIT<span class="red"></span></label>
-                              <select name="name_iit" class="form-control required" id="name_iit">
-                                  <option value="">Select</option>
-                                  <option value="IIT Kharagpur"> IIT Kharagpur </option>
-                                  <option value="IIT Bombay">IIT Bombay</option>
-                                  <option value="IIT Madras">IIT Madras </option>
-                                  <option value="IIT Delhi">IIT Delhi</option>
-                                  <option value="IIT Kanpur">IIT Kanpur</option>
-                                  <option value="IIT Roorkee">IIT Roorkee</option>
-                                  <option value="IIT Guwahati">IIT Guwahati</option>
-                                  <option value="IIT Hyderabad">IIT Hyderabad</option>
-                                  <option value="IIT Gandhinagar">IIT Gadhinagar</option>
-                                  <option value="IIT Bhubaneshwar">IIT Bhubaneshwar</option>
-                                  <option value="IIT Indore">IIT Indore</option>
-                                  <option value="IIT Ropar">IIT Ropar</option>
-                                  <option value="IIT Patna">IIT Patna</option>
-                                  <option value="IIT Mandi">IIT Mandi</option>
-                                  <option value="IIT Jodhpur">IIT Jodhpur</option>
-                                  <option value="IIT-BHU">IIT BHU</option>
-                                  <option value="IIT-ISM">IIT ISM</option>
-                                  <option value="IIT Tirupati">IIT Tirupati</option>
-                                  <option value="IIT Palakkad">IIT Palakkad</option>
-                                  <option value="IIT Goa">IIT Goa</option>
-                                  <option value="IIT Dharwad">IIT Dharwad</option>
-                                  <option value="IIT Bhilai">IIT Bhilai</option>
-                                  <option value="IIT Jammu">IIT Jammu</option>
-                              </select>
-                          </div>
-                      </div>
-                      <div class="col-md-2">
-                          <div class="form-group">
-                              <label for="exampleInputEmail1">Department<span class="red"></span></label>
-                              <input type="text" name="btech_dept" id="btech_dept" class="form-control" placeholder="Department">
-                          </div></div>
-                      <div class="col-md-2">
-                          <div class="form-group">
-                              <label for="exampleInputEmail1">CGPA <span class="red"></span></label>
-                              <input type="text" name="btech_cgpa" id="btech_cgpa" class="form-control" placeholder="CGPA">
-                          </div></div>
-                      <div class="col-md-3">
-                          <div class="form-group">
-                              <label for="exampleInputEmail1">Year of Admission <span class="red"></span></label>
-                              <select name="btech_adm" class="form-control required" id="btech_adm">
-                                  <option value="">Select</option>
-                                  <option value="2023">2023</option><option value="2022">2022</option><option value="2021">2021</option><option value="2020">2020</option><option value="2019">2019</option><option value="2018">2018</option><option value="2017">2017</option><option value="2016">2016</option><option value="2015">2015</option><option value="2014">2014</option><option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option><option value="2008">2008</option>                                </select>
-                          </div></div>
-                      <div class="col-md-3">
-                          <div class="form-group">
-                              <label for="exampleInputEmail1">Year of Graduation <span class="red"></span></label>
-                              <select name="btech_grad" class="form-control required" id="btech_grad">
-                                  <option value="">Select</option>
-                                  <option value="2023">2023</option><option value="2022">2022</option><option value="2021">2021</option><option value="2020">2020</option><option value="2019">2019</option><option value="2018">2018</option><option value="2017">2017</option><option value="2016">2016</option><option value="2015">2015</option><option value="2014">2014</option><option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option><option value="2008">2008</option>                                </select>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </section>
-      </div>
-  </div>
-
-  <button type="submit" name="submit" class="btn btn-primary" style="text-align: center;">SAVE &amp; NEXT </button>
-</form>
-<form action="" method="POST">
-  <input type="hidden" name="registration_id" value="141251112">
-  <input type="hidden" name="login_id" value="063565deb9c64f7af7c9a9a4fc2bc445">
-
-  <input type="hidden" name="controller" value="LoginHome">
-  <input type="hidden" name="function" value="academic_qalification">
-  <input type="hidden" name="pid" value="phd_admission">
-  <button type="submit" name="submit" class="btn btn-warning" style="float: right;position: relative;top: -40px"> PREVIOUS </button>
-</form>
-
-		        </div>
-
+    <div class="row">
+        <div class="col-lg-12 col-md-12">
+            <section class="panel panel-default">
+                <header class="panel-heading">
+                    B.Tech. from an IIT
+                </header>
+                <div class="panel-body">
+                    <div class="form-group row">
+                        <div class="col-md-4">
+                            <label class="radio-inline">
+                                <input type="radio" name="btech" id="btech" value="Yes">YES</label>
+                            <label class="radio-inline">
+                                <input type="radio" name="btech" id="btech1" value="No" checked="">NO</label>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
+    <div class="row">
+        <div class="col-lg-12 col-md-12">
+            <section class="panel panel-default">
+                <header class="panel-heading">
+                    GATE, JRF, NET, INSPIRE details (Select the applicability criterion and provide details). <span class="red"></span>
+                </header>
+                <div class="panel-body">
+                    <div class="form-group row">
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Gate <span class="red"></span></label>
+                                <select name="gate" id="gate" class="form-control required" onchange="myGateFunction('gate')">
+                                    <option value="">Select</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No" selected="">No</option>
+                                </select>
+                            </div></div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Subject<span class="red"></span></label>
+                                <select name="gate_sub" id="gate_sub" class="form-control">
+                                    <option value="">Select</option>
+                                    <option value="AE">AE</option>
+                                    <option value="AG">AG</option>
+                                    <option value="AR">AR</option>
+                                    <option value="BM">BM</option>
+                                    <option value="BT">BT</option>
+                                    <option value="CE">CE</option>
+                                    <option value="CH">CH</option>
+                                    <option value="CS">CS</option>
+                                    <option value="CY">CY</option>
+                                    <option value="EC">EC</option>
+                                    <option value="EE">EE</option>
+                                    <option value="ES">ES</option>
+                                    <option value="EY">EY</option>
+                                    <option value="GE">GE</option>
+                                    <option value="GG">GG</option>
+                                    <option value="IN">IN</option>
+                                    <option value="MA">MA</option>
+                                    <option value="ME">ME</option>
+                                    <option value="MN">MN</option>
+                                    <option value="MT">MT</option>
+                                    <option value="NM">NM</option>
+                                    <option value="PE">PE</option>
+                                    <option value="PH">PH</option>
+                                    <option value="PI">PI</option>
+                                    <option value="ST">ST</option>
+                                    <option value="TF">TF</option>
+                                    <option value="XE">XE</option>
+                                    <option value="XH">XH</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </div></div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Qualifying Year <span class="red"></span></label>
+                                <select name="gate_valid" id="gate_valid" class="form-control required">
+                                    <option value="">Select</option>
+                                    <option value="2023">2023</option><option value="2022">2022</option><option value="2021">2021</option><option value="2020">2020</option><option value="2019">2019</option><option value="2018">2018</option><option value="2017">2017</option><option value="2016">2016</option><option value="2015">2015</option><option value="2014">2014</option><option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option><option value="2008">2008</option>                                </select>
+                            </div></div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Roll no <span class="red"></span></label>
+                                <input type="text" name="gate_roll" id="gate_roll" value="" class="form-control" placeholder="Roll no">
+                            </div></div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Score<span class="red"></span></label>
+                                <input type="number" name="gate_score" id="gate_score" value="" class="form-control" placeholder="Score">
+                            </div></div>
+                    </div>
+                    <script type="text/javascript">
+                        function myGateFunction(val) {
+                            if (document.getElementById(val).value == 'No') {
+                                document.getElementById('gate_sub').value = "";
+                                document.getElementById("gate_sub").disabled = true;
+                                document.getElementById('gate_valid').value = "";
+                                document.getElementById("gate_valid").disabled = true;
+                                document.getElementById("gate_roll").value = "";
+                                document.getElementById("gate_roll").readOnly = true;
+                                document.getElementById("gate_score").value = "";
+                                document.getElementById("gate_score").readOnly = true;
+                            } else {
+                                document.getElementById("gate_sub").disabled = false;
+                                document.getElementById("gate_valid").disabled = false;
+                                document.getElementById("gate_roll").readOnly = false;
+                                document.getElementById("gate_score").readOnly = false;
+                            }
+                        }
+                        function myNetFunction(val) {
+                            if (document.getElementById(val).value == 'No') {
+                                document.getElementById("net_sub").value = "";
+                                document.getElementById("net_sub").readOnly = true;
+                                document.getElementById("net_year").value = "";
+                                document.getElementById("net_year").disabled = true;
+                                document.getElementById("net_fellow").value = "";
+                                document.getElementById("net_fellow").disabled = true;
+                                document.getElementById("net_roll").value = "";
+                                document.getElementById("net_roll").readOnly = true;
+                            } else {
+                                document.getElementById("net_sub").readOnly = false;
+                                document.getElementById("net_year").disabled = false;
+                                document.getElementById("net_fellow").disabled = false;
+                                document.getElementById("net_roll").readOnly = false;
+                            }
+
+                        }
+                        function myOtherFunction(val) {
+                            if (document.getElementById(val).value == 'No') {
+                                document.getElementById("other_details").value = "";
+                                document.getElementById("other_details").readOnly = true;
+                            } else {
+                                document.getElementById("other_details").readOnly = false;
+                            }
+                        }
+
+                        function myJrfFunction(val) {
+                            if (document.getElementById(val).value == 'No') {
+                                document.getElementById("jrf_fellow").value = "";
+                                document.getElementById("jrf_fellow").readOnly = true;
+                                document.getElementById("jrf_roll").value = "";
+                                document.getElementById("jrf_roll").readOnly = true;
+                                document.getElementById("jrf_score").value = "";
+                                document.getElementById("jrf_score").readOnly = true;
+                                document.getElementById("jrf_valid").value = "";
+                                document.getElementById("jrf_valid").disabled = true;
+                            } else {
+                                document.getElementById("jrf_fellow").readOnly = false;
+                                document.getElementById("jrf_roll").readOnly = false;
+                                document.getElementById("jrf_score").readOnly = false;
+                                document.getElementById("jrf_valid").disabled = false;
+                            }
+                        }
+
+                    </script>
+                    <div class="form-group row">
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">NET <span class="red"></span></label>
+                                <select name="net" id="net" class="form-control required" onchange="myNetFunction('net')">
+                                    <option value="">Select</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No" selected="">No</option>
+                                </select>
+                            </div></div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Subject<span class="red"></span></label>
+                                <input type="text" name="net_sub" id="net_sub" value="" class="form-control" placeholder="Subject">
+                            </div></div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Qualifying Year <span class="red"></span></label>
+                                <select name="net_year" id="net_year" class="form-control required">
+                                    <option value="">Select</option>
+                                    <option value="2023">2023</option><option value="2022">2022</option><option value="2021">2021</option><option value="2020">2020</option><option value="2019">2019</option><option value="2018">2018</option><option value="2017">2017</option><option value="2016">2016</option><option value="2015">2015</option><option value="2014">2014</option><option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option><option value="2008">2008</option>                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Roll no <span class="red"></span></label>
+                                <input type="text" name="net_roll" id="net_roll" value="" class="form-control" placeholder="Roll no">
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Fellowship<span class="red"></span></label>
+                                <select name="net_fellow" id="net_fellow" class="form-control">
+                                    <option value="">Select</option>
+                                    <option value="LS">LS</option>
+                                    <option value="CSIR">CSIR</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">JRF <span class="red"></span></label>
+                                <select name="jrf" class="form-control required" id="jrf" onchange="myJrfFunction('jrf')">
+                                    <option value="">Select</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No" selected="">No</option>
+                                </select>
+                            </div></div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Fellowship body and Subject<span class="red"></span></label>
+                                <input type="text" name="jrf_fellow" id="jrf_fellow" value="" class="form-control" placeholder="Fellowship body">
+
+                            </div></div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Qualifying Year <span class="red"></span></label>
+                                <select name="jrf_valid" class="form-control required" id="jrf_valid">
+                                    <option value="">Select</option>
+                                    <option value="2023">2023</option><option value="2022">2022</option><option value="2021">2021</option><option value="2020">2020</option><option value="2019">2019</option><option value="2018">2018</option><option value="2017">2017</option><option value="2016">2016</option><option value="2015">2015</option><option value="2014">2014</option><option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option><option value="2008">2008</option>                                </select>
+                            </div></div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Roll No <span class="red"></span></label>
+                                <input type="text" name="jrf_roll" id="jrf_roll" value="" class="form-control" placeholder="Roll No">
+                            </div></div>
+
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Score/Rank <span class="red"></span></label>
+                                <input type="number" name="jrf_score" id="jrf_score" value="" class="form-control" placeholder="Score/Rank">
+                            </div></div>
+
+
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Other Examination <span class="red"></span></label>
+                                <select name="other_exam" class="form-control required" id="other_exam" onchange="myOtherFunction('other_exam')">
+                                    <option value="">Select</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No" selected="">No</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Details<span class="red"></span></label>
+                                <input type="text" name="other_details" id="other_details" value="" class="form-control" placeholder="Details">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row" style="display: none;">
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Name of IIT<span class="red"></span></label>
+                                <select name="name_iit" class="form-control required" id="name_iit">
+                                    <option value="">Select</option>
+                                    <option value="IIT Kharagpur"> IIT Kharagpur </option>
+                                    <option value="IIT Bombay">IIT Bombay</option>
+                                    <option value="IIT Madras">IIT Madras </option>
+                                    <option value="IIT Delhi">IIT Delhi</option>
+                                    <option value="IIT Kanpur">IIT Kanpur</option>
+                                    <option value="IIT Roorkee">IIT Roorkee</option>
+                                    <option value="IIT Guwahati">IIT Guwahati</option>
+                                    <option value="IIT Hyderabad">IIT Hyderabad</option>
+                                    <option value="IIT Gandhinagar">IIT Gadhinagar</option>
+                                    <option value="IIT Bhubaneshwar">IIT Bhubaneshwar</option>
+                                    <option value="IIT Indore">IIT Indore</option>
+                                    <option value="IIT Ropar">IIT Ropar</option>
+                                    <option value="IIT Patna">IIT Patna</option>
+                                    <option value="IIT Mandi">IIT Mandi</option>
+                                    <option value="IIT Jodhpur">IIT Jodhpur</option>
+                                    <option value="IIT-BHU">IIT BHU</option>
+                                    <option value="IIT-ISM">IIT ISM</option>
+                                    <option value="IIT Tirupati">IIT Tirupati</option>
+                                    <option value="IIT Palakkad">IIT Palakkad</option>
+                                    <option value="IIT Goa">IIT Goa</option>
+                                    <option value="IIT Dharwad">IIT Dharwad</option>
+                                    <option value="IIT Bhilai">IIT Bhilai</option>
+                                    <option value="IIT Jammu">IIT Jammu</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Department<span class="red"></span></label>
+                                <input type="text" name="btech_dept" id="btech_dept" class="form-control" placeholder="Department">
+                            </div></div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">CGPA <span class="red"></span></label>
+                                <input type="text" name="btech_cgpa" id="btech_cgpa" class="form-control" placeholder="CGPA">
+                            </div></div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Year of Admission <span class="red"></span></label>
+                                <select name="btech_adm" class="form-control required" id="btech_adm">
+                                    <option value="">Select</option>
+                                    <option value="2023">2023</option><option value="2022">2022</option><option value="2021">2021</option><option value="2020">2020</option><option value="2019">2019</option><option value="2018">2018</option><option value="2017">2017</option><option value="2016">2016</option><option value="2015">2015</option><option value="2014">2014</option><option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option><option value="2008">2008</option>                                </select>
+                            </div></div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Year of Graduation <span class="red"></span></label>
+                                <select name="btech_grad" class="form-control required" id="btech_grad">
+                                    <option value="">Select</option>
+                                    <option value="2023">2023</option><option value="2022">2022</option><option value="2021">2021</option><option value="2020">2020</option><option value="2019">2019</option><option value="2018">2018</option><option value="2017">2017</option><option value="2016">2016</option><option value="2015">2015</option><option value="2014">2014</option><option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option><option value="2008">2008</option>                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <button type="submit" name="submit" class="btn btn-primary" style="text-align: center;">SAVE &amp; NEXT </button>
+</form>
+<form action="" method="POST">
+    <input type="hidden" name="registration_id" value="172062547">
+    <input type="hidden" name="login_id" value="6c7b29c6b86f4a78b83a6d0a4c9aba6a">
+
+    <input type="hidden" name="controller" value="LoginHome">
+    <input type="hidden" name="function" value="academic_qalification">
+    <input type="hidden" name="pid" value="phd_admission">
+    <button type="submit" name="submit" class="btn btn-warning" style="float: right;position: relative;top: -40px"> PREVIOUS </button>
+</form>
+
+<script type="text/javascript">
+    function submit_form1() {
+        dml = document.forms['frm_prod'];
+        len = dml.elements.length;
+        this.focus();
+        for (i = 0; i < len; i++) {
+            var btech = document.getElementById('btech').checked;
+            var btech1 = document.getElementById('btech1').checked;
+
+            var gate = document.getElementById('gate').value;
+            var gate_sub = document.getElementById('gate_sub').value;
+            var gate_roll = document.getElementById('gate_roll').value;
+            var gate_valid = document.getElementById('gate_valid').value;
+            var gate_score = document.getElementById('gate_score').value;
+
+            var net = document.getElementById('net').value;
+            var net_sub = document.getElementById('net_sub').value;
+            var net_fellow = document.getElementById('net_fellow').value;
+            var net_year = document.getElementById('net_year').value;
+            var net_roll = document.getElementById('net_roll').value;
+
+            var jrf = document.getElementById('jrf').value;
+            var jrf_fellow = document.getElementById('jrf_fellow').value;
+            var jrf_score = document.getElementById('jrf_score').value;
+            var jrf_valid = document.getElementById('jrf_valid').value;
+            var jrf_roll = document.getElementById('jrf_roll').value;
+
+            var other_exam = document.getElementById('other_exam').value;
+            var other_details = document.getElementById('other_details').value;
+
+            if(dml.elements[i].name == "btech") {
+                if(btech == false && btech1 == false) {
+                    alert("B.Tech. from an IIT can not be left blank.");
+                    dml.elements[i].focus();
+                    return false;
+                }
+            }
+
+            if (dml.elements[i].name == "gate") {
+                if(dml.elements[i].value == "") {
+                    alert("Gate can not be left blank.");
+                    dml.elements[i].focus();
+                    return false;
+                }
+                if (gate == "Yes") {
+                    if (gate_sub == "") {
+                        alert("Enter the subject of gate.");
+                        dml.elements[i].focus();
+                        return false;
+                    } else if (gate_score == "") {
+                        alert("Enter the score of gate.");
+                        dml.elements[i].focus();
+                        return false;
+                    } else if (gate_valid == "") {
+                        alert("Enter the Qualifying Year of gate.");
+                        dml.elements[i].focus();
+                        return false;
+                    } else if (gate_roll == "") {
+                        alert("Enter the Roll no of gate.");
+                        dml.elements[i].focus();
+                        return false;
+                    }
+                }
+            }
+
+            if (dml.elements[i].name == "net") {
+                if(dml.elements[i].value == "") {
+                    alert("NET can not be left blank.");
+                    dml.elements[i].focus();
+                    return false;
+                }
+                if (net == "Yes") {
+                    if (net_sub == "") {
+                        alert("Enter the subject of NET.");
+                        dml.elements[i].focus();
+                        return false;
+                    } else if (net_fellow == "") {
+                        alert("Enter the Fellowship of NET.");
+                        dml.elements[i].focus();
+                        return false;
+                    } else if (net_year == "") {
+                        alert("Enter the Qualifying Year of NET.");
+                        dml.elements[i].focus();
+                        return false;
+                    } else if (net_roll == "") {
+                        alert("Enter the Roll no of NET.");
+                        dml.elements[i].focus();
+                        return false;
+                    }
+                }
+            }
+
+            if (dml.elements[i].name == "jrf") {
+                if(dml.elements[i].value == "") {
+                    alert("JRF can not be left blank.");
+                    dml.elements[i].focus();
+                    return false;
+                }
+                if (jrf == "Yes") {
+                    if (jrf_fellow == "") {
+                        alert("Enter the Fellowship body of JRF.");
+                        dml.elements[i].focus();
+                        return false;
+                    } else if (jrf_score == "") {
+                        alert("Enter the Score/Rank of JRF.");
+                        dml.elements[i].focus();
+                        return false;
+                    } else if (jrf_valid == "") {
+                        alert("Enter the Qualifying Year of JRF.");
+                        dml.elements[i].focus();
+                        return false;
+                    } else if (jrf_roll == "") {
+                        alert("Enter the Roll Number of JRF.");
+                        dml.elements[i].focus();
+                        return false;
+                    }
+                }
+            }
+            if (dml.elements[i].name == "other_exam") {
+                if(dml.elements[i].value == "") {
+                    alert("Other Examination can not be left blank.");
+                    dml.elements[i].focus();
+                    return false;
+                }
+                if (other_exam == "Yes") {
+                    if (other_details == "") {
+                        alert("Enter the other examination details.");
+                        dml.elements[i].focus();
+                        return false;
+                    }
+                }
+            }
+
+        }
+        return true;
+    }
+</script>			        </div>  </div>
   </body>
 </html>
