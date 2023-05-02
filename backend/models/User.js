@@ -71,12 +71,72 @@ const UserSchema = new mongoose.Schema({
         type: String,
     }, 
     education: [{
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'Academics'
+        qualification: {
+            type: String,
+            required: true,
+        },
+        degree: {
+            type: String,
+            required: true,
+        },
+        subject: {
+            type: String,
+            required: true,
+        },
+        collage: {
+            type: String,
+            required: true,
+        },
+        board: {
+            type: String,
+            required: true,
+        },
+        year: {
+            type: String,
+            required: true,
+        },
+        regular_cross: {
+            type: String,
+            required: true,
+        },
+        max1: {
+            type: String,
+            required: true,
+        },
+        obt1: {
+            type: String,
+            required: true,
+        }
     }],
-    work : [{
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'Work'
+    jobs : [{
+        organization: {
+            type: String,
+            required: true,
+        },
+        designation: {
+            type: String,
+            required: true,
+        },
+        full_time: {
+            type: String,
+            required: true,
+        },
+        job_from: {
+            type: String,
+            required: true,
+        },
+        job_to: {
+            type: String,
+            required: true,
+        },
+        amount_w: {
+            type: String,
+            required: true,
+        },
+        job: {
+            type: String,
+            required: true,
+        }
     }]
 
 })

@@ -186,7 +186,7 @@
         <table class="table table-bordered table-responsive" id="list" cellspacing="0px" cellpadding="20px" text-align="center">
           <thead>
             <tr>
-              <th>Name of theOrganization</th>
+              <th>Name of the Organization</th>
               <th>Designation</th>
               <th>Full Time</th>
               <th>Start Date</th>
@@ -207,7 +207,7 @@
       <input type="hidden" name="controller" value="LoginHome">
       <input type="hidden" name="function" value="final_submission">
       <input type="hidden" name="pid" value="phd_admission">
-      <button type="submit" name="submit" class="btn btn-primary" style="text-align: center;">SAVE &amp; NEXT </button>
+      <button type="submit" id="submit-btn" name="submit" class="btn btn-primary" style="text-align: center;">SAVE &amp; NEXT </button>
   </form>
   <form action="" method="POST">
       <input type="hidden" name="registration_id" value="172062547">
@@ -218,9 +218,42 @@
       <button type="submit" name="submit" class="btn btn-warning" style="float: right;position: relative;top: -40px"> PREVIOUS </button>
   </form>
   <script>
-    	$("#tab").on('click', '.btnDelete', function () {
+    	$("#tab").bind('click', '.btnDelete', function () {
   	    $(this).closest('tr').remove();
     	});
+      const arr =[];
+      const apiUrl = "http://localhost:5000";
+      let token = localStorage.getItem("token");
+
+      const submit = document.getElementById("submit-btn");
+      submit.onclick = (e) => {
+        e.preventDefault();
+        console.log(arr);
+        fetch(`${apiUrl}/user/job`, 
+            {
+                method: 'POST',
+                headers: {
+                    "Content-Type": "application/json",
+                    Authorization:token,
+                  },
+                  credentials: 'same-origin',
+                body: JSON.stringify(arr),
+            })
+        .then((res) => res.json())
+            .then((data) =>{
+                console.log(data);
+                location.href = "/Registration_page_5.html"; 
+                
+            })
+            .catch((error) =>{
+                console.log(error);
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Warning!',
+                    text: 'Internal server error occured. Please try again!',
+              })
+          })
+      }
     	function AddData() {
 
   	    var rows = "";
@@ -237,7 +270,9 @@
   	    if(submit_form1()==true && dateValidate(job_from, job_to) == true){
   	      $("#tab").show();
   	      rows += "<tr><td>" + organization + "</td><td>" + designation + "</td><td>" + full_time + "</td><td>" + job_f + "</td><td>" + job_t + "</td><td>" + amount_w + "</td><td>" + job + "</td><td> <input type='hidden' name='organization[]' value='" + organization + "'> <input type='hidden' name='designation[]' value='" + designation + "'> <input type='hidden' name='full_time[]' value='" + full_time + "'> <input type='hidden' name='job_from[]' value='" + job_from + "'> <input type='hidden' name='job_to[]' value='" + job_to + "'> <input type='hidden' name='job[]' value='" + job + "'> <input type='hidden' name='amount_w[]' value='" + amount_w + "'> <button class='btnDelete'>Delete</button> </td></tr>";
-  	      $(rows).appendTo("#list tbody");
+  	      let obj = {organization, designation, full_time, job_from, job_to, amount_w, job};
+          arr.push(obj);
+          $(rows).appendTo("#list tbody");
   	      document.getElementById("organization").value="";
   	      document.getElementById("designation").value="";
   	      document.getElementById("full_time").value="";
@@ -304,7 +339,7 @@
   		  	}
   		  	if (dml.elements[i].name == "s_month") {
   		        if (dml.elements[i].value == "") {
-  		          alert("Start month  can not be left blank.");
+  		          alert("Start month can not be left blank.");
   		          dml.elements[i].focus();
   		          return false;
   		        }
@@ -362,5 +397,6 @@
   	    return true;
   	}
   </script>			        </div>  </div>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
   </body>
 </html>

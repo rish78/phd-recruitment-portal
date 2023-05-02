@@ -9,35 +9,31 @@ const AcademicsSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
-    qualification: {
-        type: String,
-        required: true,
-    },
     subject: {
         type: String,
         required: true,
     },
-    college: {
+    collage: {
         type: String,
         required: true,
     },
-    university: {
+    board: {
         type: String,
         required: true,
     },
-    passingYear: {
+    year: {
         type: String,
         required: true,
     },
-    regOrCorr: {
+    regular_cross: {
         type: String,
         required: true,
     },
-    maxMarks: {
+    max1: {
         type: String,
         required: true,
     },
-    obtMarks: {
+    obt1: {
         type: String,
         required: true,
     },

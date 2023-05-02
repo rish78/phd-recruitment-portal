@@ -83,7 +83,7 @@
 	<hr>
 	<table class="table table-bordered table-responsive">
 			</table>
-<form action="" method="POST">
+<form>
 <div id="tab" style="display: none;">
 	<table class="table table-bordered table-responsive" id="list" cellspacing="0px" cellpadding="20px" text-align="center">
 		<thead>
@@ -112,10 +112,10 @@
 	<input type="hidden" name="controller" value="LoginHome">
 	<input type="hidden" name="function" value="btech_gate_jrf_net">
 	<input type="hidden" name="pid" value="phd_admission">
-	<button type="submit" name="submit" class="btn btn-primary" style="text-align: center;">SAVE &amp; NEXT </button>
+	<button id="submit-btn" class="btn btn-primary" style="text-align: center;">SAVE &amp; NEXT </button>
 </form>
 
-<form action="" method="POST">
+<form>
 	<input type="hidden" name="registration_id" value="172062547">
 	<input type="hidden" name="login_id" value="6c7b29c6b86f4a78b83a6d0a4c9aba6a">
 
@@ -125,9 +125,44 @@
 	<button type="submit" name="submit" class="btn btn-warning" style="float: right;position: relative;top: -40px"> PREVIOUS </button>
 </form>
 <script>
-$("#tab").on('click', '.btnDelete', function () {
+	const arr =[];
+	const apiUrl = "http://localhost:5000";
+	let token = localStorage.getItem("token");
+
+$("#tab").bind('click', '.btnDelete', function () {
 	$(this).closest('tr').remove();
 });
+
+	const submit = document.getElementById("submit-btn");
+	submit.onclick = (e) => {
+		e.preventDefault();
+		console.log(arr);
+		fetch(`${apiUrl}/user/academics`, 
+        {
+            method: 'POST',
+            headers: {
+                "Content-Type": "application/json",
+                Authorization:token,
+              },
+              credentials: 'same-origin',
+            body: JSON.stringify(arr),
+        })
+		.then((res) => res.json())
+        .then((data) =>{
+            console.log(data);
+			location.href = "/Registration_page_4.html";
+            
+        })
+        .catch((error) =>{
+            console.log(error);
+            Swal.fire({
+                icon: 'error',
+                title: 'Warning!',
+                text: 'Internal server error occured. Please try again!',
+        	})
+    	})
+	}
+
 function AddData() {
 	var rows = "";
 	var qualification = document.getElementById("qualification").value;
@@ -143,6 +178,8 @@ function AddData() {
 	if(submit_form1()==true){
 		$("#tab").show();
 		rows += "<tr><td>" + qualification + "</td><td>" + degree + "</td><td>" + subject + "</td><td>" + collage + "</td><td>" + board + "</td><td>" + year + "</td><td>" + regular_cross + "</td><td>" + max1 + "</td><td>" + obt1 + "</td><td>" + per1 + "</td><td> <input type='hidden' name='qualification[]' value='" + qualification + "'> <input type='hidden' name='degree[]' value='" + degree + "'> <input type='hidden' name='subject[]' value='" + subject + "'> <input type='hidden' name='collage[]' value='" + collage + "'> <input type='hidden' name='board[]' value='" + board + "'> <input type='hidden' name='year[]' value='" + year + "'> <input type='hidden' name='regular_cross[]' value='" + regular_cross + "'> <input type='hidden' name='max[]' value='" + max1 + "'> <input type='hidden' name='obt[]' value='" + obt1 + "'> <input type='hidden' name='percent[]' value='" + per1 + "'> <button class='btnDelete'>Delete</button> </td></tr>";
+		let obj = {qualification, degree, subject, collage, board, year, regular_cross, max1, obt1};
+		arr.push(obj);
 		$(rows).appendTo("#list tbody");
 		document.getElementById("qualification").value="";
 		document.getElementById("degree").value="";

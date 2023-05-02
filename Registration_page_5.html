@@ -113,7 +113,7 @@
                       </tbody></table>
                   </div>
                   <div style="text-align: center;">
-                      <button type="submit" name="submit" class="btn btn-success"> SAVE</button>
+                      <button id="submit-btn" type="submit" name="submit" class="btn btn-success"> SAVE</button>
                   </div>
               </div>
           </div>
@@ -153,6 +153,17 @@
       <button type="submit" name="submit" class="btn btn-warning" style="float: right;position: relative;top: -40px"> PREVIOUS </button>
   </form>
   <script type="text/javascript">
+    const submit = document.getElementById("submit-btn");
+    submit.onclick = (e) => {
+        e.preventDefault();
+
+        Swal.fire({
+            icon: 'success',
+            title: 'Candidate application submitted',
+          }).then(() => {
+            location.href = "/cand_login.html";
+          })
+    }
       function myFunction_add(address) {
           if (/[^a-zA-Z0-9\n-\/ ]/.test(address)) {
               alert("Please enter only alpha numeric value in relevant information, no special characters's are allowed");
@@ -238,94 +249,7 @@
 
           len = dml.elements.length;
           this.focus();
-          for (i = 0; i < len; i++) {
-              var declaration = document.getElementById('declaration').checked;
-
-              if (dml.elements[i].name == "name_ref1") {
-                  if (dml.elements[i].value == "") {
-                      alert("Name of first refree can not be left blank");
-                      dml.elements[i].focus();
-                      return false;
-                  }
-              }
-
-              if (dml.elements[i].name == "phone1") {
-                  if (dml.elements[i].value == "") {
-                      alert("Phone no. of first refree can not be left blank");
-                      dml.elements[i].focus();
-                      return false;
-                  }
-              }
-              if (dml.elements[i].name == "email1") {
-                  var mail = document.getElementById('mail1').value;
-                  if (dml.elements[i].value == "") {
-                      alert("Email of first refree can not be left blank");
-                      dml.elements[i].focus();
-                      return false;
-                  } else if (!mail.match(/^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/))
-                  {
-                      alert('Enter a valid Email of first refree');
-                      dml.elements[i].focus();
-                      return false;
-                  }
-              }
-              if (dml.elements[i].name == "address_ref1") {
-                  if (dml.elements[i].value == "") {
-                      alert("Address of first refree can not be left blank");
-                      dml.elements[i].focus();
-                      return false;
-                  }
-              }
-              if (dml.elements[i].name == "name_ref2") {
-                  if (dml.elements[i].value == "") {
-                      alert("Name of second refree can not be left blank");
-                      dml.elements[i].focus();
-                      return false;
-                  }
-              }
-              if (dml.elements[i].name == "phone2") {
-                  if (dml.elements[i].value == "") {
-                      alert("Phone no. of second refree can not be left blank");
-                      dml.elements[i].focus();
-                      return false;
-                  }
-              }
-              if (dml.elements[i].name == "email2") {
-                  var mail = document.getElementById('mail2').value;
-                  if (dml.elements[i].value == "") {
-                      alert("Email of second refree can not be left blank");
-                      dml.elements[i].focus();
-                      return false;
-                  } else if (!mail.match(/^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/))
-                  {
-                      alert('Enter a valid email of second refree');
-                      dml.elements[i].focus();
-                      return false;
-                  }
-              }
-              if (dml.elements[i].name == "address_ref2") {
-                  if (dml.elements[i].value == "") {
-                      alert("Address of second refree can not be left blank");
-                      dml.elements[i].focus();
-                      return false;
-                  }
-              }
-              if (dml.elements[i].name == "file_name[]") {
-                  if (dml.elements[i].value == "") {
-                      alert("Please upload multiple files (Academics, work experience, publications etc.)");
-                      dml.elements[i].focus();
-                      return false;
-                  }
-              }
-              if (dml.elements[i].name == "photo_graph") {
-                  if (dml.elements[i].value == "") {
-                      alert("Passport size photograph must be uploaded");
-                      dml.elements[i].focus();
-                      return false;
-                  }
-              }
-
-          }
+         
           var exp_doc = document.getElementsByName("file_name[]");
           var totalFileSize = 0;
           for (var j = 0; j < exp_doc.length; j++) {
@@ -350,5 +274,6 @@
       a.click();
      }
    </script>			        </div>  </div>
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
   </body>
 </html>

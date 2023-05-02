@@ -4,14 +4,14 @@ const User = require("../models/User")
 
 const router = express.Router();
 
-const updatePersonal = async(req, res) => {
+const updateAcads = async(req, res) => {
     const {userid} = req;
-    const {dob, fatherName, gender, category, marital, country, alternatePhone, alternateEmail, aadhar, address, fax} = req.body;
+    console.log(req.body.arr)
     try{
         await User.updateOne({userid: userid}, 
-            {dob, fatherName, gender, category, marital, country, alternatePhone, alternateEmail, aadhar, address, fax}).then((docs)=> {
+            {education: req.body.arr}).then((docs) => {
                 console.log(docs);
-                    res.status(200).json({msg: "Personal information updated!", docs})
+                res.status(200).json({msg: "Academic information updated!", docs})
             })
 
 
@@ -25,4 +25,4 @@ const updatePersonal = async(req, res) => {
     };
 }
 
-module.exports = {updatePersonal}
+module.exports = {updateAcads}

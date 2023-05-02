@@ -85,7 +85,7 @@ button.onclick = (e) => {
     const fax = document.getElementById("fax").value
 
    
-
+    console.log(dob, fatherName, gender, category, marital, country, alternatePhone, alternateEmail, aadhar, address, fax);
     fetch(`${apiUrl}/user/personal`, 
         {
             method: 'POST',
